@@ -1,6 +1,6 @@
 <script setup>
-import { bunBuiltin } from 'globals'
 import { onMounted, ref } from 'vue'
+import { io } from 'socket.io-client'
 
 const buttonIsDisabled = ref(false)
 const inputName = ref('')
@@ -29,14 +29,32 @@ const placeholderNamePool = [
   
 ]
 
+const socket = io('http://localhost:3000')
+
+socket.on('buzzReset', () => {
+  buttonIsDisabled.value = false
+  buttonText.value = "TAP TO BUZZ IN"
+})
+socket.on('buzzOrderUpdated', (order) => {
+  console.log('Buzz order:', order)
+
+ // buzzList.value = order
+})
+
 function handleSubmit(){
-  gameCode.value = inputCode.value.value
+  gameCode.value = inputCode.value.value.toUpperCase()
   playerName.value = inputName.value.value
+
+  socket.emit('joinGame', {
+    gameCode: gameCode.value,
+    playerName: playerName.value
+  })
 }
 
 function onClick() {
   buttonIsDisabled.value = true
   buttonText.value = "YOU'VE BUZZED IN.\nWAIT FOR HOST TO RESET BUZZERS."
+  socket.emit('buzz', { gameCode: gameCode.value })
 };
 
 onMounted(() => {
@@ -51,16 +69,15 @@ onMounted(() => {
     open
     without-header
   >
-    <form>
+    <form class="wa-stack">
       <wa-input ref="inputName" label="Name" :placeholder="placeholderName"></wa-input>
-      <br/>
       <wa-input ref="inputCode" label="Game Code" placeholder="XXXX"></wa-input>
-      <wa-button slot="footer" data-dialog="close" @click="handleSubmit">Join Game</wa-button>  
+      <wa-button data-dialog="close" @click="handleSubmit">Join Game</wa-button>  
     </form>
       
   </wa-dialog>
 
-  <div>
+  <div class="name">
     <h1>{{ playerName }}</h1>
   </div>
   <div 
@@ -82,6 +99,11 @@ onMounted(() => {
       margin: 0;
       background-color: #807f7f;
       color: black;
+  }
+
+  .name {
+    text-align: center;
+    margin-bottom: 5rem;
   }
 
   .circle {
