@@ -3,6 +3,8 @@ import express from 'express'
 import { createServer } from 'http'
 import { Server } from 'socket.io'
 import cors from 'cors'
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express()
 app.use(cors())
@@ -22,6 +24,16 @@ server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
 
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// Serve static files from the Vue app build
+app.use(express.static(path.join(__dirname, '../../dist')));
+
+// Catch-all: send index.html for client-side routing
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(__dirname, '../../dist/index.html'));
+});
 
 
 const games = {} // gameCode -> { players: [], buzzed: null }
