@@ -63,29 +63,30 @@ onMounted(() => {
 </script>
 
 <template>
+  <div class="wa-stack wa-gap-m">
+    <wa-dialog
+      id="info-dialog"
+      open
+      without-header
+    >
+      <form class="wa-stack">
+        <wa-input ref="inputName" label="Name" :placeholder="placeholderName"></wa-input>
+        <wa-input ref="inputCode" label="Game Code" placeholder="XXXX"></wa-input>
+        <wa-button data-dialog="close" @click="handleSubmit">Join Game</wa-button>  
+      </form>
+        
+    </wa-dialog>
 
-  <wa-dialog
-    id="info-dialog"
-    open
-    without-header
-  >
-    <form class="wa-stack">
-      <wa-input ref="inputName" label="Name" :placeholder="placeholderName"></wa-input>
-      <wa-input ref="inputCode" label="Game Code" placeholder="XXXX"></wa-input>
-      <wa-button data-dialog="close" @click="handleSubmit">Join Game</wa-button>  
-    </form>
-      
-  </wa-dialog>
-
-  <div class="name">
-    <h1>{{ playerName }}</h1>
-  </div>
-  <div 
-    @click="onClick"
-    class="circle"
-     :class="{ 'color-untapped': !buttonIsDisabled, 'color-tapped': buttonIsDisabled }"
-  >
-    {{ buttonText }}
+    <div class="name">
+      <h1>{{ playerName }}</h1>
+    </div>
+    <div 
+      @click="onClick"
+      class="circle"
+      :class="{ 'color-untapped': !buttonIsDisabled, 'color-tapped': buttonIsDisabled }"
+    >
+      {{ buttonText }}
+    </div>
   </div>
 </template>
 

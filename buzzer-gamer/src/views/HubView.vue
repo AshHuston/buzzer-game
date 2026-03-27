@@ -8,6 +8,7 @@ const gameCode = ref('')
 
 const socket = io()
 
+const buzzerUrl = 'https://buzzer-game-dd6w.onrender.com'
 
 socket.on('buzzOrderUpdated', (order) => {
   buzzList.value = order
@@ -46,26 +47,33 @@ function resetBuzzers() {
 </script>
 
 <template>
-    <h1>Ggame code: {{ gameCode }}</h1>
-    <br/>
-    <div class="playerList">
-        <h2>Players:</h2>
-        <p 
-            v-for="(player, index) in players.filter(p => p.name !== 'hub')" 
-            :key="index"
-        >
-        {{ player.name }}
-        </p>
-    </div>
-    <br/>
-    <wa-button @click="resetBuzzers">RESET BUZZERS</wa-button>
-    <div class="buzzerList">
-        <h2>Buzzes:</h2>
-        <p 
-            v-for="(player, index) in buzzList.filter(p => p.name !== 'hub')" 
-            :key="index"
-        >
-        {{ player.name }}
-        </p>
+    <div class="wa-stack wa-gap-m">
+
+        <div class="wa-cluster">
+            <h1>Game code: {{ gameCode }}</h1>
+            <wa-qr-code
+                :value="buzzerUrl"
+                size="86"
+            ></wa-qr-code>
+        </div>
+        <div class="playerList">
+            <h2>Players:</h2>
+            <p 
+                v-for="(player, index) in players.filter(p => p.name !== 'hub')" 
+                :key="index"
+            >
+            - {{ player.name }}
+            </p>
+        </div>
+        <wa-button @click="resetBuzzers">RESET BUZZERS</wa-button>
+        <div class="buzzerList">
+            <h2>Buzzes:</h2>
+            <p 
+                v-for="(player, index) in buzzList.filter(p => p.name !== 'hub')" 
+                :key="index"
+            >
+            {{ index+1 }}. {{ player.name }}
+            </p>
+        </div>
     </div>
 </template>
