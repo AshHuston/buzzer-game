@@ -29,7 +29,7 @@ const placeholderNamePool = [
   
 ]
 
-const socket = io('http://localhost:3000')
+const socket = io()
 
 socket.on('buzzReset', () => {
   buttonIsDisabled.value = false

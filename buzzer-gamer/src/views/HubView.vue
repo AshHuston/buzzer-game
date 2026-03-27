@@ -6,7 +6,7 @@ const players = ref([])
 const buzzList = ref([])
 const gameCode = ref('')
 
-const socket = io('http://localhost:3000')
+const socket = io()
 
 
 socket.on('buzzOrderUpdated', (order) => {
