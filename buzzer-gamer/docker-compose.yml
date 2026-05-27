@@ -1,0 +1,19 @@
+services:
+  buzzers:
+    build: .
+    container_name: buzzers
+    restart: unless-stopped
+
+    networks:
+      - proxy
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.vueapp.rule=Host(`buzzer.ashhuston.com`)"
+      - "traefik.http.routers.vueapp.entrypoints=websecure"
+      - "traefik.http.routers.vueapp.tls.certresolver=letsencrypt"
+      - "traefik.http.services.vueapp.loadbalancer.server.port=3000"
+
+networks:
+  proxy:
+    external: true

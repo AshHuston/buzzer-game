@@ -8,7 +8,7 @@ const gameCode = ref('')
 
 const socket = io()
 
-const buzzerUrl = 'https://buzzer-game-dd6w.onrender.com'
+const buzzerUrl = 'https://buzzer.ashhuston.com'
 
 socket.on('buzzOrderUpdated', (order) => {
   buzzList.value = order
