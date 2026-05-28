@@ -1,32 +1,30 @@
 <script setup>
 import { io } from 'socket.io-client'
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, computed } from 'vue';
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
+
+const gameCodeQuery = computed(() => route.query.code)
 const players = ref([])
 const buzzList = ref([])
-const gameCode = ref('')
+const gameCode = ref(gameCodeQuery.value ? gameCodeQuery.value.toUpperCase() : '')
 
 const socket = io();
 
-const buzzerUrl = 'https://buzzer.ashhuston.com'
+const buzzerUrl = 'https://buzzer.ashhuston.com/' + gameCode.value == '' ? '' : '?code=' + gameCode.value
 
-socket.on('buzzOrderUpdated', (order) => {
-  buzzList.value = order
-})
-socket.on('buzzReset', () => {
-  buzzList.value = []
-})
-socket.on("playersUpdated", (playerList) => {
-  players.value = playerList
-})
+socket.on('buzzOrderUpdated', (order) => {buzzList.value = order})
+socket.on('buzzReset', () => {buzzList.value = []})
+socket.on("playersUpdated", (playerList) => {players.value = playerList})
+
 onMounted(() => {
-    gameCode.value = randomCode()
+    gameCode.value = gameCode.value == '' ? randomCode() : gameCode.value.toUpperCase()
 
     socket.emit('joinGame', {
         gameCode: gameCode.value,
         playerName: 'hub'
     })
-
 })
 
 function randomCode(length = 4) {

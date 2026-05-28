@@ -1,7 +1,12 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { io } from 'socket.io-client'
+import { useRoute } from 'vue-router'
+//import { computed } from 'vue'
 
+const route = useRoute()
+
+const gameCodeQuery = computed(() => route.query.code)
 const buttonIsDisabled = ref(false)
 const inputName = ref('')
 const inputCode = ref('')
@@ -75,13 +80,17 @@ onMounted(() => {
     >
       <form class="wa-stack">
         <wa-input ref="inputName" label="Name" :placeholder="placeholderName"></wa-input>
-        <wa-input ref="inputCode" label="Game Code" placeholder="XXXX"></wa-input>
+        <wa-input
+          ref="inputCode"
+          label="Game Code"
+          :value="gameCodeQuery"
+        ></wa-input>
         <wa-button data-dialog="close" @click="handleSubmit">Join Game</wa-button>
       </form>
     </wa-dialog>
     <wa-dialog
       id="scoreboard-dialog"
-      label="Scoreboard:"
+      :label="'Scoreboard for '+ gameCode +':'"
       light-dismiss
     >
       <p v-for="player, index in [...players.filter(p => p.name !== 'hub')].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p>
