@@ -50,7 +50,8 @@ io.on('connection', (socket) => {
 
     games[gameCode].players.push({
       id: socket.id,
-      name: playerName
+      name: playerName,
+      score: 0
     })
 
     console.log(`${playerName} joined ${gameCode}`)
@@ -97,5 +98,18 @@ io.on('connection', (socket) => {
 
       io.to(gameCode).emit('playersUpdated', game.players)
     }
+  })
+
+  socket.on('updateScore', ({ gameCode, playerId, delta }) => {
+    //console.log(`Updating score for player ${playerId} in game ${gameCode} by ${delta}. Game code: ${gameCode}, Player ID: ${playerId}, Delta: ${delta}`)
+    const game = games[gameCode]
+    if (!game) return
+
+    const player = game.players.find(p => p.id === playerId)
+    if (!player) return
+
+    player.score += delta
+
+    io.to(gameCode).emit('playersUpdated', game.players)
   })
 })

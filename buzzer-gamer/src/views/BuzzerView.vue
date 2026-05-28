@@ -9,27 +9,28 @@ const playerName = ref('')
 const gameCode = ref('')
 const placeholderName = ref('')
 const buttonText = ref('TAP TO BUZZ IN')
+const players = ref([])
 
 const placeholderNamePool = [
-  'muhnameisjeff',
-  'Ryan\'s mom',
-  'Snordlebort',
-  'chungusamungus',
-  'Ska8terade',
-  'Blanched Almonds',
-  'jesse\'s girl',
-  'Mohammed',
-  'Captain Jack Sparrow',
-  'Mario Mario',
-  'Professor Oak',
-  'Doctor Eggman',
-  'there is no profanity filter on this',
-  '[[REDACTED]]',
-  'Kermit the Frenchman',
-  
+  // 'muhnameisjeff',
+  // 'Ryan\'s mom',
+  // 'Snordlebort',
+  // 'chungusamungus',
+  // 'Ska8terade',
+  // 'Blanched Almonds',
+  // 'jesse\'s girl',
+  // 'Mohammed',
+  // 'Captain Jack Sparrow',
+  // 'Mario Mario',
+  // 'Professor Oak',
+  // 'Doctor Eggman',
+  // 'there is no profanity filter on this',
+  // '[[REDACTED]]',
+  // 'Kermit the Frenchman',
+  "Enter team name here!"
 ]
 
-const socket = io()
+const socket = io();
 
 socket.on('buzzReset', () => {
   buttonIsDisabled.value = false
@@ -39,6 +40,10 @@ socket.on('buzzOrderUpdated', (order) => {
   console.log('Buzz order:', order)
 
  // buzzList.value = order
+})
+
+socket.on('playersUpdated', (playerList) => {
+  players.value = playerList
 })
 
 function handleSubmit(){
@@ -63,8 +68,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="wa-stack wa-gap-m">
-    <wa-dialog
+  <wa-dialog
       id="info-dialog"
       open
       without-header
@@ -72,15 +76,24 @@ onMounted(() => {
       <form class="wa-stack">
         <wa-input ref="inputName" label="Name" :placeholder="placeholderName"></wa-input>
         <wa-input ref="inputCode" label="Game Code" placeholder="XXXX"></wa-input>
-        <wa-button data-dialog="close" @click="handleSubmit">Join Game</wa-button>  
+        <wa-button data-dialog="close" @click="handleSubmit">Join Game</wa-button>
       </form>
-        
     </wa-dialog>
+    <wa-dialog
+      id="scoreboard-dialog"
+      label="Scoreboard:"
+      light-dismiss
+    >
+      <p v-for="player, index in [...players].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p>
+    </wa-dialog>
+
+  <div class="wa-stack wa-gap-m">
+    <wa-icon class="scorebaord-icon" name="table" data-dialog="open scoreboard-dialog" />
 
     <div class="name">
       <h1>{{ playerName }}</h1>
     </div>
-    <div 
+    <div
       @click="onClick"
       class="circle"
       :class="{ 'color-untapped': !buttonIsDisabled, 'color-tapped': buttonIsDisabled }"
@@ -111,17 +124,17 @@ onMounted(() => {
       /* Defines the size of the circle */
       width: 80vw;
       height: 80vw;
-      
+
       /* Creates the circle shape */
       border-radius: 50%;
-      
+
       border: 5px solid #333;
-      
+
       /* Centers the text inside the circle using Flexbox */
       display: flex;
       justify-content: center;
       align-items: center;
-      
+
       /* Styles the text */
       color: white;
       font-size: 24px;
@@ -134,5 +147,16 @@ onMounted(() => {
   }
   .color-tapped {
     background-color: #7e3326; /* Tomato color */
+  }
+  .scorebaord-icon {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    cursor: pointer;
+    font-size: 4rem;
+  }
+  .scoreboard-line {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
   }
 </style>

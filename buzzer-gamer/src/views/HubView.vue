@@ -6,7 +6,7 @@ const players = ref([])
 const buzzList = ref([])
 const gameCode = ref('')
 
-const socket = io()
+const socket = io();
 
 const buzzerUrl = 'https://buzzer.ashhuston.com'
 
@@ -26,17 +26,17 @@ onMounted(() => {
         gameCode: gameCode.value,
         playerName: 'hub'
     })
-    
+
 })
 
 function randomCode(length = 4) {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   let result = ''
-  
+
   for (let i = 0; i < length; i++) {
     result += chars[Math.floor(Math.random() * chars.length)]
   }
-  
+
   return result
 }
 
@@ -56,24 +56,41 @@ function resetBuzzers() {
                 size="86"
             ></wa-qr-code>
         </div>
-        <div class="playerList">
+        <wa-button @click="resetBuzzers" style="width: 60%; margin: auto">RESET BUZZERS</wa-button>
+        <!-- <div class="playerList">
             <h2>Players:</h2>
-            <p 
-                v-for="(player, index) in players.filter(p => p.name !== 'hub')" 
+            <p
+                v-for="(player, index) in players.filter(p => p.name !== 'hub')"
                 :key="index"
             >
             - {{ player.name }}
             </p>
+        </div> -->
+        <div class="scoreButtonList">
+            <h2>Scores:</h2>
+            <div
+                v-for="(player, index) in players.filter(p => p.name !== 'hub')"
+                :key="index"
+                class="wa-split"
+            >
+                <span>{{ player.name }}: {{ player.score }}</span>
+                <div>
+                  <wa-button @click="socket.emit('updateScore', { gameCode, playerId: player.id, delta: 100 })">+100</wa-button>
+                  <wa-button @click="socket.emit('updateScore', { gameCode, playerId: player.id, delta: 99 })">+99</wa-button>
+                  <wa-button @click="socket.emit('updateScore', { gameCode, playerId: player.id, delta: -50 })">-50</wa-button>
+              </div>
+            </div>
         </div>
-        <wa-button @click="resetBuzzers">RESET BUZZERS</wa-button>
+        <wa-divider></wa-divider>
         <div class="buzzerList">
             <h2>Buzzes:</h2>
-            <p 
-                v-for="(player, index) in buzzList.filter(p => p.name !== 'hub')" 
+            <p
+                v-for="(player, index) in buzzList.filter(p => p.name !== 'hub')"
                 :key="index"
             >
             {{ index+1 }}. {{ player.name }}
             </p>
         </div>
+        <wa-divider></wa-divider>
     </div>
 </template>
