@@ -84,7 +84,7 @@ onMounted(() => {
       label="Scoreboard:"
       light-dismiss
     >
-      <p v-for="player, index in [...players].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p>
+      <p v-for="player, index in [...players.filter(p => p.name !== 'hub')].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p>
     </wa-dialog>
 
   <div class="wa-stack wa-gap-m">
