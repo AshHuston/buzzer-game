@@ -12,7 +12,7 @@ const gameCode = ref(gameCodeQuery.value ? gameCodeQuery.value.toUpperCase() : '
 
 const socket = io();
 
-const buzzerUrl = 'https://buzzer.ashhuston.com/' + gameCode.value == '' ? '' : '?code=' + gameCode.value
+const buzzerUrl = 'https://buzzer.ashhuston.com/' + (gameCode.value == '' ? '' : '?code=' + gameCode.value)
 
 socket.on('buzzOrderUpdated', (order) => {buzzList.value = order})
 socket.on('buzzReset', () => {buzzList.value = []})
