@@ -112,4 +112,26 @@ io.on('connection', (socket) => {
 
     io.to(gameCode).emit('playersUpdated', game.players)
   })
+
+  socket.on('updateTeamScore', ({ gameCode, teamName, delta }) => {
+    const game = games[gameCode]
+    if (!game) return
+    if (!game.teams) game.teams = []
+    let team = game.teams.find(t => t.name === teamName)
+    
+    if (!team) {
+      game.teams.push({
+        name: teamName,
+        score: delta
+      })
+      team = game.teams.find(t => t.name === teamName)
+    }
+
+    team.score += delta
+    io.to(gameCode).emit('teamsUpdated', game.teams)
+  })
+
+  socket.on('setScoreboardMode', ({gameCode, isTeamsMode}) =>{
+    io.to(gameCode).emit('applyScoreboardMode', isTeamsMode)
+  })
 })

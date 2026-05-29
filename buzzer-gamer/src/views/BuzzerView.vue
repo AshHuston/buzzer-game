@@ -15,9 +15,11 @@ const gameCode = ref('')
 const placeholderName = ref('')
 const buttonText = ref('TAP TO BUZZ IN')
 const players = ref([])
+const scoreboardIsTeamsMode = ref(false)
+const teams = ref([])
 
 const placeholderNamePool = [
-  // 'muhnameisjeff',
+  // 'muhnameisjeff',`
   // 'Ryan\'s mom',
   // 'Snordlebort',
   // 'chungusamungus',
@@ -49,6 +51,15 @@ socket.on('buzzOrderUpdated', (order) => {
 
 socket.on('playersUpdated', (playerList) => {
   players.value = playerList
+})
+
+socket.on('teamsUpdated', (teamsList) => {
+  teams.value = teamsList
+})
+
+socket.on('applyScoreboardMode', (isTeamsMode) => {
+  console.log("do th ething")
+  scoreboardIsTeamsMode.value = isTeamsMode
 })
 
 function handleSubmit(){
@@ -93,7 +104,9 @@ onMounted(() => {
       :label="'Scoreboard for '+ gameCode +':'"
       light-dismiss
     >
-      <p v-for="player, index in [...players.filter(p => p.name !== 'hub')].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p>
+      <div v-if="scoreboardIsTeamsMode"><p v-for="team, index in teams.sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ team.name }}: {{ team.score }}</p></div>
+      <div v-else><p v-for="player, index in [...players.filter(p => p.name !== 'hub')].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p></div>
+      
     </wa-dialog>
 
   <div class="wa-stack wa-gap-m">
