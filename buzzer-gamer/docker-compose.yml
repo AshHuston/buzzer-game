@@ -1,8 +1,4 @@
 services:
-  vueapp:
-    environment:
-      APP_HOST: ${APP_HOST}
-
   buzzers:
     build: .
     container_name: buzzers
@@ -10,6 +6,9 @@ services:
 
     networks:
       - proxy
+
+    environment:
+      APP_HOST: ${APP_HOST}
 
     labels:
       - "traefik.enable=true"
