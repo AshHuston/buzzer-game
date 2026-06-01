@@ -1,14 +1,15 @@
 services:
   buzzers:
-    build: .
+    build:
+      context: .
+      args:
+        VITE_APP_HOST: ${APP_HOST}
+
     container_name: buzzers
     restart: unless-stopped
 
     networks:
       - proxy
-
-    environment:
-      APP_HOST: ${APP_HOST}
 
     labels:
       - "traefik.enable=true"
