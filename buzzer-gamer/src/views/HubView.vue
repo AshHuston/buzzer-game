@@ -86,7 +86,7 @@ function setScoreboardMode(e){
             <wa-qr-code
                 :value="buzzerUrl"
                 size="86"
-            ></wa-qr-code>
+            ></wa-qr-code>{{ buzzerUrl }}
         </div>
         <div class="wa-cluster">
             <wa-button @click="resetBuzzers" style="width: 60%; margin: auto">RESET BUZZERS</wa-button>
