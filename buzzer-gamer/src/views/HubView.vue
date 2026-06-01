@@ -22,7 +22,8 @@ const teams = ref([])
 
 const socket = io();
 
-const buzzerUrl = 'https://buzzer.ashhuston.com/' + (gameCode.value == '' ? '' : '?code=' + gameCode.value)
+const host = import.meta.env.VITE_APP_HOST
+const buzzerUrl = 'https://' + host + '/' + (gameCode.value == '' ? '' : '?code=' + gameCode.value)
 
 socket.on('buzzOrderUpdated', (order) => {buzzList.value = order})
 socket.on('buzzReset', () => {buzzList.value = []})
@@ -89,8 +90,8 @@ function setScoreboardMode(e){
             <h2>Scores:</h2>
             <div v-if="isTeamMode">
                 <div class="wa-cluster">
-                    <wa-input 
-                        placeholder="Team Name" 
+                    <wa-input
+                        placeholder="Team Name"
                         :value="teamNameInput"
                         @input="teamNameInput = $event.target.value"
                     />
@@ -104,9 +105,9 @@ function setScoreboardMode(e){
                 >
                     <span>{{ team.name }}: {{ team.score }}</span>
                     <div>
-                        <wa-button 
-                            v-for="points, index in pointButtonValues" 
-                            :key="index" 
+                        <wa-button
+                            v-for="points, index in pointButtonValues"
+                            :key="index"
                             @click="socket.emit('updateTeamScore', { gameCode, teamName: team.name, delta: points })"
                         >
                             {{ points>0 ? '+':'' }}{{ points }}
@@ -122,9 +123,9 @@ function setScoreboardMode(e){
                 >
                     <span>{{ player.name }}: {{ player.score }}</span>
                     <div>
-                        <wa-button 
-                            v-for="points, index in pointButtonValues" 
-                            :key="index" 
+                        <wa-button
+                            v-for="points, index in pointButtonValues"
+                            :key="index"
                             @click="socket.emit('updateScore', { gameCode, playerId: player.id, delta: points })"
                         >
                             {{ points>0 ? '+':'' }}{{ points }}

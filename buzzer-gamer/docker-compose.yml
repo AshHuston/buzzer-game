@@ -1,4 +1,8 @@
 services:
+  vueapp:
+    environment:
+      APP_HOST: ${APP_HOST}
+
   buzzers:
     build: .
     container_name: buzzers
@@ -9,7 +13,7 @@ services:
 
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.vueapp.rule=Host(`buzzer.ashhuston.com`)"
+      - "traefik.http.routers.vueapp.rule=Host(`${APP_HOST}`)"
       - "traefik.http.routers.vueapp.entrypoints=websecure"
       - "traefik.http.routers.vueapp.tls.certresolver=letsencrypt"
       - "traefik.http.services.vueapp.loadbalancer.server.port=3000"
