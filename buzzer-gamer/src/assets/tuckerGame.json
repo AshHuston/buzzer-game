@@ -1,0 +1,184 @@
+{
+    "categories" :[
+        {
+            "name": "Category 1",
+            "questions": [
+                {
+                    "question": "What is the capital of France?",
+                    "answer": "Paris",
+                    "value": 100
+                },
+                {
+                    "question": "What is the largest planet in our solar system?",
+                    "answer": "Jupiter",
+                    "value": 200
+                },
+                {
+                    "question": "What is the chemical symbol for water?",
+                    "answer": "H2O",
+                    "value": 300
+                },
+                {
+                    "question": "Who painted the Mona Lisa?",
+                    "answer": "Leonardo da Vinci",
+                    "value": 400
+                },
+                {
+                    "question": "What is the smallest prime number?",
+                    "answer": "2",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Category 2",
+            "questions": [
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "answer": "Harper Lee",
+                    "value": 100
+                },
+                {
+                    "question": "What is the chemical symbol for gold?",
+                    "answer": "Au",
+                    "value": 200
+                },
+                {
+                    "question": "What is the largest mammal?",
+                    "answer": "Blue Whale",
+                    "value": 300
+                },
+                {
+                    "question": "Who is the current president of the United States?",
+                    "answer": "Joe Biden",
+                    "value": 400
+                },
+                {
+                    "question": "What is the capital of Japan?",
+                    "answer": "Tokyo",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Science",
+            "questions": [
+                {
+                    "question": "What force keeps planets in orbit around the Sun?",
+                    "answer": "Gravity",
+                    "value": 100
+                },
+                {
+                    "question": "What gas do plants absorb from the atmosphere?",
+                    "answer": "Carbon Dioxide",
+                    "value": 200
+                },
+                {
+                    "question": "What is the hardest natural substance on Earth?",
+                    "answer": "Diamond",
+                    "value": 300
+                },
+                {
+                    "question": "What scientist developed the three laws of motion?",
+                    "answer": "Isaac Newton",
+                    "value": 400
+                },
+                {
+                    "question": "What particle carries a negative electric charge?",
+                    "answer": "Electron",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Movies",
+            "questions": [
+                {
+                    "question": "What color pill does Neo take in The Matrix?",
+                    "answer": "Red",
+                    "value": 100
+                },
+                {
+                    "question": "Who directed Jaws?",
+                    "answer": "Steven Spielberg",
+                    "value": 200
+                },
+                {
+                    "question": "What is the highest-grossing film of all time (without adjusting for inflation)?",
+                    "answer": "Avatar",
+                    "value": 300
+                },
+                {
+                    "question": "Which actor portrayed Iron Man in the Marvel Cinematic Universe?",
+                    "answer": "Robert Downey Jr.",
+                    "value": 400
+                },
+                {
+                    "question": "What 1942 film features the line 'Here's looking at you, kid'?",
+                    "answer": "Casablanca",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Geography",
+            "questions": [
+                {
+                    "question": "What is the largest ocean on Earth?",
+                    "answer": "Pacific Ocean",
+                    "value": 100
+                },
+                {
+                    "question": "What country is home to the Great Pyramids of Giza?",
+                    "answer": "Egypt",
+                    "value": 200
+                },
+                {
+                    "question": "What is the longest river in South America?",
+                    "answer": "Amazon River",
+                    "value": 300
+                },
+                {
+                    "question": "What is the capital city of Australia?",
+                    "answer": "Canberra",
+                    "value": 400
+                },
+                {
+                    "question": "Mount Kilimanjaro is located in what country?",
+                    "answer": "Tanzania",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Sports",
+            "questions": [
+                {
+                    "question": "How many players are on the field for one soccer team at a time?",
+                    "answer": "11",
+                    "value": 100
+                },
+                {
+                    "question": "In baseball, how many strikes make an out?",
+                    "answer": "3",
+                    "value": 200
+                },
+                {
+                    "question": "What sport uses the terms birdie and eagle?",
+                    "answer": "Golf",
+                    "value": 300
+                },
+                {
+                    "question": "Which country invented volleyball?",
+                    "answer": "United States",
+                    "value": 400
+                },
+                {
+                    "question": "What athlete has won the most Olympic gold medals?",
+                    "answer": "Michael Phelps",
+                    "value": 500
+                }
+            ]
+        }
+    ]
+}

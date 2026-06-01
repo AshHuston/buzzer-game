@@ -1,21 +1,21 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <div class="wrapper">
-      <!-- <nav>
+      <nav>
         <RouterLink to="/">Buzzer</RouterLink>
         <RouterLink to="/hub">Hub</RouterLink>
-      </nav> -->
+      </nav>
     </div>
-  </header>
+  </header> -->
 
   <RouterView />
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -77,4 +77,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->

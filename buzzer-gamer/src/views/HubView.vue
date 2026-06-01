@@ -1,7 +1,9 @@
 <script setup>
+import Gameboard from '@/components/gameboard.vue';
 import { io } from 'socket.io-client'
 import { onMounted, ref, computed } from 'vue';
 import { useRoute } from 'vue-router'
+import game from '@/assets/nicholasGame.json'
 
 const route = useRoute()
 
@@ -74,6 +76,10 @@ function setScoreboardMode(e){
 </script>
 
 <template>
+  <dev class="wa-cluster">
+    <div>
+      <gameboard :categories="game.categories" />
+    </div>
     <div class="wa-stack wa-gap-m">
         <div class="wa-cluster">
             <h1>Game code: {{ gameCode }}</h1>
@@ -146,4 +152,5 @@ function setScoreboardMode(e){
         </div>
         <wa-divider></wa-divider>
     </div>
+  </dev>
 </template>
