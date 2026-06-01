@@ -1,5 +1,5 @@
 <script setup>
-import Gameboard from '@/components/gameboard.vue';
+import Gameboard from '@/components/GameBoard.vue';
 import { io } from 'socket.io-client'
 import { onMounted, ref, computed } from 'vue';
 import { useRoute } from 'vue-router'
