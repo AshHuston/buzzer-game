@@ -8,7 +8,7 @@
         :key="index"
         class="wa-stack wa-gap-xs"
       >
-        <h2 class="section-tile">{{ category.name }}</h2>
+        <h3 class="section-tile">{{ category.name }}</h3>
         <wa-divider style="--width:1px; --color: grey;" />
         <QuestionTile
           v-for="(question, qIndex) in category.questions"
@@ -47,5 +47,6 @@ defineProps({
   border: 2px solid #333;
   border-radius: 8px;
   cursor: pointer;
+  text-align: center;
 }
 </style>

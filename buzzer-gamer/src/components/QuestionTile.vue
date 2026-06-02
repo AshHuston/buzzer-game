@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/no-deprecated-slot-attribute -->
 <template>
-  <div class="question-tile" @click="modalWasOpened = true; openDialog()">
+  <div class="question-tile" :class="{questionless : question==''}" @click="modalWasOpened = true; openDialog()">
     <h2 v-if="!modalWasOpened">{{ value }}</h2>
   </div>
   <wa-dialog
@@ -59,6 +59,10 @@ const showAnswer = ref(false)
   border: 2px solid #333;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.questionless {
+  background-color: tomato;
 }
 
 .question-dialog {

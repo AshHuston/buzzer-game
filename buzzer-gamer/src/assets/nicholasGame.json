@@ -1,184 +1,250 @@
 {
-    "categories" :[
-        {
-            "name": "Category 1",
-            "questions": [
-                {
-                    "question": "What is the capital of France?",
-                    "answer": "Paris",
-                    "value": 100
-                },
-                {
-                    "question": "What is the largest planet in our solar system?",
-                    "answer": "Jupiter",
-                    "value": 200
-                },
-                {
-                    "question": "What is the chemical symbol for water?",
-                    "answer": "H2O",
-                    "value": 300
-                },
-                {
-                    "question": "Who painted the Mona Lisa?",
-                    "answer": "Leonardo da Vinci",
-                    "value": 400
-                },
-                {
-                    "question": "What is the smallest prime number?",
-                    "answer": "2",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Category 2",
-            "questions": [
-                {
-                    "question": "Who wrote 'To Kill a Mockingbird'?",
-                    "answer": "Harper Lee",
-                    "value": 100
-                },
-                {
-                    "question": "What is the chemical symbol for gold?",
-                    "answer": "Au",
-                    "value": 200
-                },
-                {
-                    "question": "What is the largest mammal?",
-                    "answer": "Blue Whale",
-                    "value": 300
-                },
-                {
-                    "question": "Who is the current president of the United States?",
-                    "answer": "Joe Biden",
-                    "value": 400
-                },
-                {
-                    "question": "What is the capital of Japan?",
-                    "answer": "Tokyo",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Science",
-            "questions": [
-                {
-                    "question": "What force keeps planets in orbit around the Sun?",
-                    "answer": "Gravity",
-                    "value": 100
-                },
-                {
-                    "question": "What gas do plants absorb from the atmosphere?",
-                    "answer": "Carbon Dioxide",
-                    "value": 200
-                },
-                {
-                    "question": "What is the hardest natural substance on Earth?",
-                    "answer": "Diamond",
-                    "value": 300
-                },
-                {
-                    "question": "What scientist developed the three laws of motion?",
-                    "answer": "Isaac Newton",
-                    "value": 400
-                },
-                {
-                    "question": "What particle carries a negative electric charge?",
-                    "answer": "Electron",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Movies",
-            "questions": [
-                {
-                    "question": "What color pill does Neo take in The Matrix?",
-                    "answer": "Red",
-                    "value": 100
-                },
-                {
-                    "question": "Who directed Jaws?",
-                    "answer": "Steven Spielberg",
-                    "value": 200
-                },
-                {
-                    "question": "What is the highest-grossing film of all time (without adjusting for inflation)?",
-                    "answer": "Avatar",
-                    "value": 300
-                },
-                {
-                    "question": "Which actor portrayed Iron Man in the Marvel Cinematic Universe?",
-                    "answer": "Robert Downey Jr.",
-                    "value": 400
-                },
-                {
-                    "question": "What 1942 film features the line 'Here's looking at you, kid'?",
-                    "answer": "Casablanca",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Geography",
-            "questions": [
-                {
-                    "question": "What is the largest ocean on Earth?",
-                    "answer": "Pacific Ocean",
-                    "value": 100
-                },
-                {
-                    "question": "What country is home to the Great Pyramids of Giza?",
-                    "answer": "Egypt",
-                    "value": 200
-                },
-                {
-                    "question": "What is the longest river in South America?",
-                    "answer": "Amazon River",
-                    "value": 300
-                },
-                {
-                    "question": "What is the capital city of Australia?",
-                    "answer": "Canberra",
-                    "value": 400
-                },
-                {
-                    "question": "Mount Kilimanjaro is located in what country?",
-                    "answer": "Tanzania",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Sports",
-            "questions": [
-                {
-                    "question": "How many players are on the field for one soccer team at a time?",
-                    "answer": "11",
-                    "value": 100
-                },
-                {
-                    "question": "In baseball, how many strikes make an out?",
-                    "answer": "3",
-                    "value": 200
-                },
-                {
-                    "question": "What sport uses the terms birdie and eagle?",
-                    "answer": "Golf",
-                    "value": 300
-                },
-                {
-                    "question": "Which country invented volleyball?",
-                    "answer": "United States",
-                    "value": 400
-                },
-                {
-                    "question": "What athlete has won the most Olympic gold medals?",
-                    "answer": "Michael Phelps",
-                    "value": 500
-                }
-            ]
-        }
+  "round1": {
+    "categories": [
+      {
+        "name": "That's Magic baby",
+        "questions": [
+          {
+            "question": "Magic: the gathering is build around the 5 colors of mana. What 6th color was almost added to the game but ultimately scrapped?",
+            "answer": "Purple",
+            "value": 100
+          },
+          {
+            "question": "What is the term for a group of cards that share a common theme or mechanic, often released together in Magic: the Gathering?",
+            "answer": "A \"cycle\"",
+            "value": 200
+          },
+          {
+            "question": "What is the name for the 3 color combination that Nicholas has historically played a lot?",
+            "answer": "Jund (Black, Red, Green)",
+            "value": 300
+          },
+          {
+            "question": "What year was Magic: the Gathering’s first set, Limited Edition Alpha, released for sale?",
+            "answer": "1993",
+            "value": 400
+          },
+          {
+            "question": "Name 5 evergreen keywords without saying \"flying\"",
+            "answer": "Deathtouch, Defender, Double Strike, Fight, First Strike, Flash, Haste, Indestructible, Lifelink, Menace, Prowess, Reach, Scry, Trample, Vigilance, Ward, etc.",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Say, what's in this drink?",
+        "questions": [
+          {
+            "question": "What is the primary ingredient in the Margarita?",
+            "answer": "Tequila",
+            "value": 100
+          },
+          {
+            "question": "Name a classic Mocktail",
+            "answer": "Shirley Temple, Virgin Mojito, Virgin Mary, etc.",
+            "value": 200
+          },
+          {
+            "question": "What is the name for the strainer that is constructed with a removable spring coil around the edge?",
+            "answer": "A Hawthorne strainer",
+            "value": 300
+          },
+          {
+            "question": "Name one of Nick's favorite cocktails. (Current or previous)",
+            "answer": "Pomelo, Boulevardier, Long Island Iced Tea, Old Fashioned, Kentucky Mule",
+            "value": 400
+          },
+          {
+            "question": "How do you make an Old Fashioned? (College bar answer will be accepted but I'll allow someone to steal with the correct answer)",
+            "answer": "Sugar cube, bitters, splash of water, muddle, add ice, add whiskey, stir, pour over 1 rock, garnish with orange oils/peel and cherry",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "I barely know her!",
+        "questions": [
+          {
+            "question": "What is the most popular form of poker in the world?",
+            "answer": "Texas Hold'em",
+            "value": 100
+          },
+          {
+            "question": "What is the term for hand of 10, Jack, Queen, King, Ace of the same suit?",
+            "answer": "A Royal Flush",
+            "value": 200
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 300
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 400
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Neil would know",
+        "questions": [
+          {
+            "question": "",
+            "answer": "",
+            "value": 100
+          },
+          {
+            "question": "What is unique about Neptune (within our solar system)?",
+            "answer": "Its spin is perpendicular its orbit",
+            "value": 200
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 300
+          },
+          {
+            "question": "What are the names of our sun and moon?",
+            "answer": "Sol and Luna",
+            "value": 400
+          },
+          {
+            "question": "How hot is the surface of the sun?",
+            "answer": "~9900 degrees Fahrenheit (~5500 degrees Celsius)",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "We gotta learn so we don't do it again",
+        "questions": [
+          {
+            "question": "How long was the 100 year war?",
+            "answer": "116 years (1337-1453)",
+            "value": 100
+          },
+          {
+            "question": "Which President owned a pet alligator that lived in a White House bathroom?",
+            "answer": "John Quincy Adams",
+            "value": 200
+          },
+          {
+            "question": "In 1977 the last legal execution with the guillotine occurred in France. What movie premiered in American theaters that same year?",
+            "answer": "Star Wars: A New Hope",
+            "value": 300
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 400
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Nick's better half",
+        "questions": [
+          {
+            "question": "How tall is Ash?",
+            "answer": "6'2\"",
+            "value": 100
+          },
+          {
+            "question": "How many cats does Ash own?",
+            "answer": "Four",
+            "value": 200
+          },
+          {
+            "question": "What is Ash’s favorite ice cream? Flavor and brand.",
+            "answer": "Homemade brand chocolate ice cream",
+            "value": 300
+          },
+          {
+            "question": "What is Ash's home address? (don't look it up)",
+            "answer": "",
+            "value": 400
+          },
+          {
+            "question": "What are the middle names of all the male members of Ash's family?",
+            "answer": "Sinclair (Ash), James (Westley), Timothy (Jonah)",
+            "value": 500
+          }
+        ]
+      }
     ]
+  },
+  "round2": {
+    "categories": [
+      {
+        "name": "What do you know-lan?",
+        "questions": [
+          {
+            "question": "What 2008 Christopher Nolan film features Batman facing off against the Joker, played by Heath Ledger?",
+            "answer": "The Dark Knight",
+            "value": 100
+          },
+          {
+            "question": "In Christopher Nolan's Inception, what object does Cobb use as his totem to test whether he is dreaming?",
+            "answer": "A spinning top",
+            "value": 200
+          },
+          {
+            "question": "What 2014 Christopher Nolan film follows a team of astronauts searching for a new home for humanity through a wormhole?",
+            "answer": "Interstellar",
+            "value": 300
+          },
+          {
+            "question": "Christopher Nolan's 2000 breakthrough film tells its story in reverse chronological order to mirror the protagonist's condition. What is the film?",
+            "answer": "Memento",
+            "value": 400
+          },
+          {
+            "question": "Which Christopher Nolan film features rival magicians Robert Angier and Alfred Borden, and is based on a 1995 novel by Christopher Priest?",
+            "answer": "The Prestige",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Check yourself",
+        "questions": [
+          {
+            "question": "Who goes first in a game of chess?",
+            "answer": "The player with the white pieces",
+            "value": 100
+          },
+          {
+            "question": "Where do most historians agree the game of chess originated?",
+            "answer": "India. In the 6th century AD, a game called Chaturanga was played, which is considered the precursor to modern chess.",
+            "value": 200
+          },
+          {
+            "question": "What special move allows a king and rook to move simultaneously in a single turn?",
+            "answer": "Castling",
+            "value": 300
+          },
+          {
+            "question": "What term describes a situation in which a player has no moves that positivley effect their position, and given the choice would just skip their turn?",
+            "answer": "Zugzwang",
+            "value": 400
+          },
+          {
+            "question": "What is the name of the opening that begins with the moves 1. d4 d5 2. c4 ...?",
+            "answer": "The Queen's Gambit",
+            "value": 500
+          }
+        ]
+      }
+    ]
+  }
 }

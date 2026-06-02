@@ -1,7 +1,7 @@
 <template>
   <div class="wa-cluster">
     <div>
-      <gameboard v-if="game.categories" :categories="game.categories" />
+      <gameboard v-if="game.round1.categories" :categories="game.round1.categories" />
     </div>
     <div class="wa-stack wa-gap-m">
         <div class="wa-cluster">
