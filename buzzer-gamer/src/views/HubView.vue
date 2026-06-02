@@ -145,6 +145,5 @@ function setScoreboardMode(e){
             </p>
         </div>
         <wa-divider></wa-divider>
-        this is test text!!!!!
     </div>
 </template>
