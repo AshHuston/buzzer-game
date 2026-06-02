@@ -1,15 +1,85 @@
+<script setup>
+import { io } from 'socket.io-client'
+import { onMounted, ref, computed } from 'vue';
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const gameCodeQuery = computed(() => route.query.code)
+const players = ref([])
+const buzzList = ref([])
+const gameCode = ref(gameCodeQuery.value ? gameCodeQuery.value.toUpperCase() : '')
+const isTeamMode = ref(false)
+const teamNameInput = ref('')
+
+const pointButtonValues = [
+    +100,
+    +99,
+    -50,
+]
+
+const teams = ref([])
+
+const socket = io();
+
+const host = import.meta.env.VITE_APP_HOST
+const buzzerUrl = 'https://' + host + '/' + (gameCode.value == '' ? '' : '?code=' + gameCode.value)
+
+socket.on('buzzOrderUpdated', (order) => {buzzList.value = order})
+socket.on('buzzReset', () => {buzzList.value = []})
+socket.on("playersUpdated", (playerList) => {players.value = playerList})
+socket.on("teamsUpdated", (teamsList) => {teams.value = teamsList})
+
+onMounted(() => {
+    gameCode.value = gameCode.value == '' ? randomCode() : gameCode.value.toUpperCase()
+
+    socket.emit('joinGame', {
+        gameCode: gameCode.value,
+        playerName: 'hub'
+    })
+})
+
+function randomCode(length = 4) {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  let result = ''
+
+  for (let i = 0; i < length; i++) {
+    result += chars[Math.floor(Math.random() * chars.length)]
+  }
+
+  return result
+}
+
+function resetBuzzers() {
+    socket.emit('resetBuzz', { gameCode: gameCode.value })
+}
+
+function addNewTeam() {
+    if (teamNameInput.value == '') return
+
+    teams.value.push({
+        name: teamNameInput.value,
+        score: 0
+    })
+
+    socket.emit('updateTeamScore', {gameCode: gameCode.value, teamName: teamNameInput.value, delta: 0})
+    teamNameInput.value = ''
+}
+
+function setScoreboardMode(e){
+    isTeamMode.value = e
+    socket.emit('setScoreboardMode', {gameCode: gameCode.value, isTeamsMode: e})
+}
+
+</script>
+
 <template>
-  <div class="wa-cluster">
-    <div>
-      <gameboard v-if="game.round1.categories" :categories="game.round1.categories" />
-    </div>
     <div class="wa-stack wa-gap-m">
         <div class="wa-cluster">
             <h1>Game code: {{ gameCode }}</h1>
             <wa-qr-code
                 :value="buzzerUrl"
                 size="86"
-                @click="qrCodeZoom = !qrCodeZoom"
             ></wa-qr-code>
         </div>
         <div class="wa-cluster">
@@ -76,124 +146,4 @@
         </div>
         <wa-divider></wa-divider>
     </div>
-  </div>
-  <div v-if="qrCodeZoom" class="lightbox-overlay" @click="qrCodeZoom = false">
-    <wa-qr-code
-      :value="buzzerUrl"
-      :size="qrZoomSize"
-      class="lightbox-image"
-    ></wa-qr-code>
-  </div>
 </template>
-
-<script setup>
-import Gameboard from '@/components/GameBoard.vue';
-import { io } from 'socket.io-client'
-import { onMounted, ref, computed, onBeforeUnmount } from 'vue';
-import { useRoute } from 'vue-router'
-import game from '@/assets/nicholasGame.json'
-
-const route = useRoute()
-
-const gameCodeQuery = computed(() => route.query.code)
-const players = ref([])
-const buzzList = ref([])
-const gameCode = ref(gameCodeQuery.value ? gameCodeQuery.value.toUpperCase() : '')
-const isTeamMode = ref(false)
-const teamNameInput = ref('')
-const qrCodeZoom = ref(false)
-
-const pointButtonValues = [
-    +100,
-    +99,
-    -50,
-]
-
-const teams = ref([])
-
-const socket = io();
-
-const host = import.meta.env.VITE_APP_HOST
-const buzzerUrl = 'https://' + host + '/' + (gameCode.value == '' ? '' : '?code=' + gameCode.value)
-
-socket.on('buzzOrderUpdated', (order) => {buzzList.value = order})
-socket.on('buzzReset', () => {buzzList.value = []})
-socket.on("playersUpdated", (playerList) => {players.value = playerList})
-socket.on("teamsUpdated", (teamsList) => {teams.value = teamsList})
-
-onMounted(() => {
-  gameCode.value = gameCode.value == '' ? randomCode() : gameCode.value.toUpperCase()
-
-  socket.emit('joinGame', {
-      gameCode: gameCode.value,
-      playerName: 'hub'
-  })
-
-  updateSize()
-  window.addEventListener('resize', updateSize)
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', updateSize)
-})
-
-const qrZoomSize = ref(300)
-
-function updateSize() {
-  qrZoomSize.value = Math.floor(Math.min(window.innerWidth, window.innerHeight) * 0.6)
-}
-
-function randomCode(length = 4) {
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  let result = ''
-
-  for (let i = 0; i < length; i++) {
-    result += chars[Math.floor(Math.random() * chars.length)]
-  }
-
-  return result
-}
-
-function resetBuzzers() {
-    socket.emit('resetBuzz', { gameCode: gameCode.value })
-}
-
-function addNewTeam() {
-    if (teamNameInput.value == '') return
-
-    teams.value.push({
-        name: teamNameInput.value,
-        score: 0
-    })
-
-    socket.emit('updateTeamScore', {gameCode: gameCode.value, teamName: teamNameInput.value, delta: 0})
-    teamNameInput.value = ''
-}
-
-function setScoreboardMode(e){
-    isTeamMode.value = e
-    socket.emit('setScoreboardMode', {gameCode: gameCode.value, isTeamsMode: e})
-}
-
-</script>
-
-<style scoped>
-.lightbox-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  backdrop-filter: blur(4px);
-}
-
-.lightbox-image {
-  max-width: 60vw;
-  max-height: 60vh;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-</style>
