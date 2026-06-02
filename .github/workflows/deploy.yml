@@ -16,5 +16,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          script: |
-            ~/deploy-buzzer.sh
+          script: ~/deploy-buzzer.sh
+          port: 2222
