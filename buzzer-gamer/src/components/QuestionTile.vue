@@ -9,6 +9,7 @@
     light-dismiss
     class="question-dialog"
     @open="modalWasOpened = true"
+    style="--width: 55vw;"
   >
     <wa-button slot="footer" @click="showAnswer=true">Show Answer</wa-button>
     <h1>{{ question }}</h1>

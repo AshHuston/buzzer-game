@@ -17,37 +17,69 @@ const buttonText = ref('TAP TO BUZZ IN')
 const players = ref([])
 const scoreboardIsTeamsMode = ref(false)
 const teams = ref([])
+const myBuzzPlacement = ref(null)
 
 const placeholderNamePool = [
-  // 'muhnameisjeff',`
-  // 'Ryan\'s mom',
-  // 'Snordlebort',
-  // 'chungusamungus',
-  // 'Ska8terade',
-  // 'Blanched Almonds',
-  // 'jesse\'s girl',
-  // 'Mohammed',
-  // 'Captain Jack Sparrow',
-  // 'Mario Mario',
-  // 'Professor Oak',
-  // 'Doctor Eggman',
-  // 'there is no profanity filter on this',
-  // '[[REDACTED]]',
-  // 'Kermit the Frenchman',
-  "Enter team name here!"
+  'muhnameisjeff',
+  'Ryan\'s mom',
+  'Snordlebort',
+  'chungusamungus',
+  'Ska8terade',
+  'Blanched Almonds',
+  'jesse\'s girl',
+  'Mohammed',
+  'Captain Jack Sparrow',
+  'Mario Mario',
+  'Professor Oak',
+  'Doctor Eggman',
+  'there is no profanity filter on this',
+  '[[REDACTED]]',
+  'Kermit the Frenchman',
 ]
+
+const buttonColor = ref('#e05941')
+
+function darkenColor(hex, percent) {
+  const amount = 1 - percent / 100
+
+  const r = Math.round(parseInt(hex.slice(1, 3), 16) * amount)
+  const g = Math.round(parseInt(hex.slice(3, 5), 16) * amount)
+  const b = Math.round(parseInt(hex.slice(5, 7), 16) * amount)
+
+  return `rgb(${r}, ${g}, ${b})`
+}
+
+const pressedColor = computed(() =>
+  darkenColor(buttonColor.value, 15)
+)
 
 const socket = io();
 
 socket.on('buzzReset', () => {
   buttonIsDisabled.value = false
   buttonText.value = "TAP TO BUZZ IN"
+  myBuzzPlacement.value = null
 })
 socket.on('buzzOrderUpdated', (order) => {
   console.log('Buzz order:', order)
-
- // buzzList.value = order
+  myBuzzPlacement.value = order.findIndex(p => p.name === playerName.value) + 1
+  if (myBuzzPlacement.value > 0) {
+    buttonIsDisabled.value = true
+    buttonText.value = `YOU'VE BUZZED IN ${myBuzzPlacement.value}${getOrdinalSuffix(myBuzzPlacement.value)}.\nWAIT FOR HOST TO RESET BUZZERS.`
+  }
 })
+
+function getOrdinalSuffix(n) {
+  if (n % 100 >= 11 && n % 100 <= 13) {
+    return 'TH';
+  }
+  switch (n % 10) {
+    case 1: return 'ST';
+    case 2: return 'ND';
+    case 3: return 'RD';
+    default: return 'TH';
+  }
+}
 
 socket.on('playersUpdated', (playerList) => {
   players.value = playerList
@@ -73,8 +105,6 @@ function handleSubmit(){
 }
 
 function onClick() {
-  buttonIsDisabled.value = true
-  buttonText.value = "YOU'VE BUZZED IN.\nWAIT FOR HOST TO RESET BUZZERS."
   socket.emit('buzz', { gameCode: gameCode.value })
 };
 
@@ -106,11 +136,17 @@ onMounted(() => {
     >
       <div v-if="scoreboardIsTeamsMode"><p v-for="team, index in teams.sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ team.name }}: {{ team.score }}</p></div>
       <div v-else><p v-for="player, index in [...players.filter(p => p.name !== 'hub')].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p></div>
-      
+
     </wa-dialog>
 
   <div class="wa-stack wa-gap-m">
-    <wa-icon class="scorebaord-icon" name="table" data-dialog="open scoreboard-dialog" />
+    <div class="wa-stack wa-gap-m control-container">
+      <wa-icon class="scorebaord-icon" name="table" data-dialog="open scoreboard-dialog" />
+      <wa-color-picker
+        :value="buttonColor"
+        @change="buttonColor = $event.target.value"
+      />
+    </div>
 
     <div class="name">
       <h1>{{ playerName }}</h1>
@@ -119,6 +155,7 @@ onMounted(() => {
       @click="onClick"
       class="circle"
       :class="{ 'color-untapped': !buttonIsDisabled, 'color-tapped': buttonIsDisabled }"
+      :style="{ backgroundColor: !buttonIsDisabled ? buttonColor : pressedColor}"
     >
       {{ buttonText }}
     </div>
@@ -164,16 +201,13 @@ onMounted(() => {
       padding: 10px; /* Optional: adds a little space around the text */
       box-sizing: border-box; /* Ensures padding is included in the width/height */
   }
-  .color-untapped {
-    background-color: #e05941; /* Tomato color */
-  }
-  .color-tapped {
-    background-color: #7e3326; /* Tomato color */
-  }
-  .scorebaord-icon {
+  .control-container {
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
+    align-items: center;
+  }
+  .scorebaord-icon {
     cursor: pointer;
     font-size: 4rem;
   }
