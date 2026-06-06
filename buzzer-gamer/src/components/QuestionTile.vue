@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/no-deprecated-slot-attribute -->
 <template>
   <div class="question-tile" :class="{questionless : question==''}" @click="modalWasOpened = true; openDialog()">
-    <h2 v-if="!modalWasOpened">{{ value }}</h2>
+    <p v-if="!modalWasOpened" class="pointsText">{{ value }}</p>
   </div>
   <wa-dialog
     :label="'For '+value+' points...'"
@@ -52,8 +52,8 @@ const showAnswer = ref(false)
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 120px;
+  width: 13vw;
+  aspect-ratio: 1.8;
   background-color: #4a90e2;
   color: white;
   border: 2px solid #333;
@@ -77,5 +77,9 @@ wa-divider {
 
 .blank {
   color: transparent;
+}
+
+.pointsText {
+  font-size: 4rem;
 }
 </style>

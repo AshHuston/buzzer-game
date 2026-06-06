@@ -8,7 +8,7 @@
         :key="index"
         class="wa-stack wa-gap-xs"
       >
-        <h3 class="section-tile">{{ category.name }}</h3>
+        <p class="section-tile">{{ category.name }}</p>
         <wa-divider style="--width:1px; --color: grey;" />
         <QuestionTile
           v-for="(question, qIndex) in category.questions"
@@ -40,13 +40,15 @@ defineProps({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 120px;
+  width: 13vw;
+  aspect-ratio: 1.4;
   background-color: #4a90e2;
   color: white;
   border: 2px solid #333;
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
+  font-size: 2.5rem;
+  line-height: 95%;
 }
 </style>

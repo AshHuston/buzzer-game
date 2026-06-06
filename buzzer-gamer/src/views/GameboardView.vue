@@ -1,23 +1,23 @@
 <template>
-  <div class="wa-cluster">
-    <div>
-      <gameboard v-if="game.round1.categories" :categories="game.round1.categories" />
+  <div class="wa-split page">
+    <div class="gameboardContainer">
+      <gameboard v-if="game.round1.categories && !showRound2" :categories="game.round1.categories" />
+      <gameboard v-if="game.round2.categories && showRound2" :categories="game.round2.categories" />
     </div>
-    <div class="wa-stack wa-gap-m">
+    <div class="wa-stack wa-gap-m sidebar">
         <div class="wa-cluster">
-            <h1>Game code: {{ gameCode }}</h1>
+            <p class="main caption">Game code: {{ gameCode }}</p>
             <wa-qr-code
                 :value="buzzerUrl"
-                size="86"
+                size="100"
                 @click="qrCodeZoom = !qrCodeZoom"
             ></wa-qr-code>
-        </div>
-        <div class="wa-cluster">
-            <wa-button @click="resetBuzzers" style="width: 60%; margin: auto">RESET BUZZERS</wa-button>
-            <wa-checkbox :checked="isTeamMode" @change="setScoreboardMode($event.target.checked)">Team mode</wa-checkbox>
+            <wa-button @click="resetBuzzers" style="width: 70%; margin: auto">RESET BUZZERS</wa-button>
+            <wa-checkbox @change="showRound2 = $event.target.checked">Round 2</wa-checkbox>
+            <wa-checkbox @change="setScoreboardMode($event.target.checked)">Team mode</wa-checkbox>
         </div>
         <div class="scoreButtonList">
-            <h2>Scores:</h2>
+            <p class="caption">Scores:</p>
             <div v-if="isTeamMode">
                 <div class="wa-cluster">
                     <wa-input
@@ -31,7 +31,7 @@
                 <div
                     v-for="(team, index) in teams"
                     :key="index"
-                    class="wa-split"
+                    class="wa-split name"
                 >
                     <span>{{ team.name }}: {{ team.score }}</span>
                     <div>
@@ -49,7 +49,7 @@
                 <div
                     v-for="(player, index) in players.filter(p => p.name !== 'hub')"
                     :key="index"
-                    class="wa-split"
+                    class="wa-split name"
                 >
                     <span>{{ player.name }}: {{ player.score }}</span>
                     <div>
@@ -66,10 +66,11 @@
         </div>
         <wa-divider></wa-divider>
         <div class="buzzerList">
-            <h2>Buzzes:</h2>
+            <p class="caption">Buzzes:</p>
             <p
                 v-for="(player, index) in buzzList.filter(p => p.name !== 'hub')"
                 :key="index"
+                class="name"
             >
             {{ index+1 }}. {{ player.name }}
             </p>
@@ -102,6 +103,10 @@ const gameCode = ref(gameCodeQuery.value ? gameCodeQuery.value.toUpperCase() : '
 const isTeamMode = ref(false)
 const teamNameInput = ref('')
 const qrCodeZoom = ref(false)
+const showRound2 = ref(false)
+
+isTeamMode.value = false
+showRound2.value = false
 
 const pointButtonValues = [
     +100,
@@ -178,6 +183,26 @@ function setScoreboardMode(e){
 </script>
 
 <style scoped>
+.page{
+  padding: 30px;
+  background-color: rgb(91, 91, 91);
+  color: #c3c3c3;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.board-container {
+    min-width: 0;
+    flex: 1;
+}
+
+.sidebar {
+    width: 400px; /* adjust as needed */
+}
+
 .lightbox-overlay {
   position: fixed;
   inset: 0;
@@ -195,5 +220,29 @@ function setScoreboardMode(e){
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+wa-checkbox::part(control) {
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 3px solid #c3c3c3;
+    background-color: #929292;
+}
+wa-checkbox::part(label) {
+    color: #c3c3c3;
+    font-size: 1.5rem;
+}
+
+.caption {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.main {
+    font-size: 3rem;
+}
+
+.name {
+    font-size: 1.75rem;
 }
 </style>

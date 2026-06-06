@@ -15,6 +15,16 @@ import { RouterView } from 'vue-router'
   <RouterView />
 </template>
 
+<style>
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+}
+</style>
 <!-- <style scoped>
 header {
   line-height: 1.5;
