@@ -1,0 +1,370 @@
+{
+  "round1": {
+    "categories": [
+      {
+        "name": "That's Magic baby",
+        "questions": [
+          {
+            "question": "Magic: the gathering is build around the 5 colors of mana. What 6th color was almost added to the game but ultimately scrapped?",
+            "answer": "Purple",
+            "value": 100
+          },
+          {
+            "question": "What is the term for a group of Magic: the Gathering cards that share a common theme or mechanic, often released in the same expansion set?",
+            "answer": "A \"cycle\"",
+            "value": 200
+          },
+          {
+            "question": "What is the name for the 3 color combination that Nicholas has historically played a lot?",
+            "answer": "Jund (Black, Red, Green)",
+            "value": 300
+          },
+          {
+            "question": "What year was Magic: the Gathering’s first set, Limited Edition Alpha, released for sale?",
+            "answer": "1993",
+            "value": 400
+          },
+          {
+            "question": "Name 5 evergreen keywords without saying \"flying\"",
+            "answer": "Deathtouch, Defender, Double Strike, Fight, First Strike, Flash, Haste, Indestructible, Lifelink, Menace, Prowess, Reach, Scry, Trample, Vigilance, Ward, etc.",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Say, what's in this drink?",
+        "questions": [
+          {
+            "question": "What is the primary ingredient in the Margarita?",
+            "answer": "Tequila",
+            "value": 100
+          },
+          {
+            "question": "Name a classic Mocktail",
+            "answer": "Shirley Temple, Virgin Mojito, Virgin Mary, etc.",
+            "value": 200
+          },
+          {
+            "question": "What is the name for the strainer that is constructed with a removable spring coil around the edge?",
+            "answer": "A Hawthorne strainer",
+            "value": 300
+          },
+          {
+            "question": "Name one of Nick's favorite cocktails. (Current or previous)",
+            "answer": "Pomelo, Boulevardier, Long Island Iced Tea, Old Fashioned, Kentucky Mule",
+            "value": 400
+          },
+          {
+            "question": "How do you make an Old Fashioned? (College bar answer will be accepted but I'll allow someone to steal with the correct answer)",
+            "answer": "Sugar cube, bitters, splash of water, muddle, add ice, add whiskey, stir, pour over 1 rock, garnish with orange oils/peel and cherry",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "I barely know her!",
+        "questions": [
+          {
+            "question": "What is the most popular form of poker in the world?",
+            "answer": "Texas Hold'em",
+            "value": 100
+          },
+          {
+            "question": "What is the term for hand of 10, Jack, Queen, King, Ace of the same suit? Which is the best possible hand.",
+            "answer": "A Royal Flush",
+            "value": 200
+          },
+          {
+            "question": "In Texas Hold'em, what are the first three community cards called?",
+            "answer": "The Flop",
+            "value": 300
+          },
+          {
+            "question": "In Texas Hold'em, if the board is A♣ A♦ K♠ K♥ 2♣ and neither player has an Ace or King, who wins?",
+            "answer": "The player with the higher kicker",
+            "value": 400
+          },
+          {
+            "question": "You are holding pocket aces preflop in Texas Hold'em. What percentage of the time will you win against one random hand after all five community cards are dealt? (I will accept an answer within 5%)",
+            "answer": "~85.2%",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Neil would know",
+        "questions": [
+          {
+            "question": "Approximatley how long does it take sunlight to reach Earth?",
+            "answer": "~8 minutes",
+            "value": 100
+          },
+          {
+            "question": "What is unique about Neptune (within our solar system)?",
+            "answer": "Its spin is perpendicular its orbit",
+            "value": 200
+          },
+          {
+            "question": "What is the term for the boundary around a black hole beyond which nothing (including light) can escape?",
+            "answer": "The event horizon",
+            "value": 300
+          },
+          {
+            "question": "What are the names of our sun and moon?",
+            "answer": "Sol and Luna",
+            "value": 400
+          },
+          {
+            "question": "How hot is the surface of the sun?",
+            "answer": "~9900 degrees Fahrenheit (~5500 degrees Celsius)",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "We gotta learn so we don't do it again",
+        "questions": [
+          {
+            "question": "How long was the 100 year war?",
+            "answer": "116 years (1337-1453)",
+            "value": 100
+          },
+          {
+            "question": "Which President owned a pet alligator that lived in a White House bathroom?",
+            "answer": "John Quincy Adams",
+            "value": 200
+          },
+          {
+            "question": "In 1977 the last legal execution with the guillotine occurred in France. What movie premiered in American theaters that same year?",
+            "answer": "Star Wars: A New Hope",
+            "value": 300
+          },
+          {
+            "question": "What 1914 assassination is widely considered the spark that ignited World War I?",
+            "answer": "The assassination of Archduke Franz Ferdinand",
+            "value": 400
+          },
+          {
+            "question": "Which emperor issued the Edict of Milan in 313 AD granting legal status to Christianity within the Roman Empire?",
+            "answer": "Constantine the Great",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Nick's better half",
+        "questions": [
+          {
+            "question": "How tall is Ash?",
+            "answer": "6'2\"",
+            "value": 100
+          },
+          {
+            "question": "How many cats does Ash own?",
+            "answer": "Four",
+            "value": 200
+          },
+          {
+            "question": "What is Ash’s favorite ice cream? Flavor and brand.",
+            "answer": "Homemade brand chocolate ice cream",
+            "value": 300
+          },
+          {
+            "question": "What is Ash's home address? (don't look it up)",
+            "answer": "",
+            "value": 400
+          },
+          {
+            "question": "What are the middle names of all the male members of Ash's family?",
+            "answer": "Sinclair (Ash), James (Westley), Timothy (Jonah)",
+            "value": 500
+          }
+        ]
+      }
+    ]
+  },
+  "round2": {
+    "categories": [
+      {
+        "name": "What do you know-lan?",
+        "questions": [
+          {
+            "question": "What 2008 Christopher Nolan film features Batman facing off against the Joker, played by Heath Ledger?",
+            "answer": "The Dark Knight",
+            "value": 100
+          },
+          {
+            "question": "In Christopher Nolan's Inception, what object does Cobb use as his totem to test whether he is dreaming?",
+            "answer": "A spinning top",
+            "value": 200
+          },
+          {
+            "question": "What 2014 Christopher Nolan film follows a team of astronauts searching for a new home for humanity through a wormhole?",
+            "answer": "Interstellar",
+            "value": 300
+          },
+          {
+            "question": "Christopher Nolan's 2000 breakthrough film tells its story in reverse chronological order to mirror the protagonist's condition. What is the film?",
+            "answer": "Memento",
+            "value": 400
+          },
+          {
+            "question": "Which Christopher Nolan film features rival magicians Robert Angier and Alfred Borden, and is based on a 1995 novel by Christopher Priest?",
+            "answer": "The Prestige",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Check yourself",
+        "questions": [
+          {
+            "question": "Who goes first in a game of chess?",
+            "answer": "The player with the white pieces",
+            "value": 100
+          },
+          {
+            "question": "Where do most historians agree the game of chess originated?",
+            "answer": "India. In the 6th century AD, a game called Chaturanga was played, which is considered the precursor to modern chess.",
+            "value": 200
+          },
+          {
+            "question": "What special move allows a king and rook to move simultaneously in a single turn?",
+            "answer": "Castling",
+            "value": 300
+          },
+          {
+            "question": "What term describes a situation in which a player has no moves that positivley effect their position, and given the choice would just skip their turn?",
+            "answer": "Zugzwang",
+            "value": 400
+          },
+          {
+            "question": "What is the name of the opening that begins with the moves 1. d4 d5 2. c4 ...?",
+            "answer": "The Queen's Gambit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "We’re going up up up",
+        "questions": [
+          {
+            "question": "What substance do climbers commonly put on their hands to keep them dry and improve grip?",
+            "answer": "Chalk",
+            "value": 100
+          },
+          {
+            "question": "What device is typically used to attach a rope to a climber’s harness and is essential for clipping protection on sport routes?",
+            "answer": "Carabiner",
+            "value": 200
+          },
+          {
+            "question": "What term is used for climbing without ropes or harnesses, usually on shorter routes with crash pads below?",
+            "answer": "Bouldering",
+            "value": 300
+          },
+          {
+            "question": "What is the name of the device used by a climber's partner to manage the rope and catch falls?",
+            "answer": "A belay device",
+            "value": 400
+          },
+          {
+            "question": "A climber reaches a section of rock where there are no obvious handholds or footholds and must rely heavily on friction between their shoes and the rock. What climbing technique is this called?",
+            "answer": "Smearing",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Its-a-me!",
+        "questions": [
+          {
+            "question": "What is the term for the valve that controls water flow into an entire house from the main supply line?",
+            "answer": "Main shutoff valve",
+            "value": 100
+          },
+          {
+            "question": "What is the name of the tool used to tighten or loosen pipe fittings with serrated jaws?",
+            "answer": "Pipe wrench",
+            "value": 200
+          },
+          {
+            "question": "What is the primary purpose of a P-trap under a sink?",
+            "answer": "To block sewer gases from coming back up through the drain",
+            "value": 300
+          },
+          {
+            "question": "What is the term for the vertical pipe that connects a building’s plumbing system to the main sewer line?",
+            "answer": "Building drain stack (or soil stack)",
+            "value": 400
+          },
+          {
+            "question": "What device uses air pressure or a spring mechanism to absorb sudden pressure changes in plumbing systems and prevent pipe damage?",
+            "answer": "Water hammer arrestor",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Aggress atop big guy",
+        "questions": [
+          {
+            "question": "In Attack on Titan, what is the military branch responsible for exploring outside the walls?",
+            "answer": "The Survey Corps (or scouts)",
+            "value": 100
+          },
+          {
+            "question": "What weapon is commonly used alongside ODM gear to attack Titan weak points?",
+            "answer": "Hardened Paring Blades",
+            "value": 200
+          },
+          {
+            "question": "The military in Attack on Titan uses special equipment called \"ODM\" gear to combat the titans. What does ODM stand for?",
+            "answer": "Omni-Directional Mobility",
+            "value": 300
+          },
+          {
+            "question": "What powers the military ODM gear?",
+            "answer": "Pressurized gas from Iceburst Stone",
+            "value": 400
+          },
+          {
+            "question": "What are all 9 titans spawned from the soul of Ymir?",
+            "answer": "Founding, Attack, Cart, Collosal, Armored, Jaw, Female, Beast, Warhammer",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "The good 'ol days",
+        "questions": [
+          {
+            "question": "What year did the first iPhone release?",
+            "answer": "2007",
+            "value": 100
+          },
+          {
+            "question": "What was the first video on Youtube.com to hit 1,000,000,000 (one billion) views?",
+            "answer": "Psy's \"Gangnam Style\"",
+            "value": 200
+          },
+          {
+            "question": "What year was Harambe shot?",
+            "answer":  "2016 - May he rest in peace",
+            "value": 300
+          },
+          {
+            "question": "Clear plastic surrounding a meta core, what is the name of the contact juggling toy that went viral in 2010?",
+            "answer": "The Fushigi Ball",
+            "value": 400
+          },
+          {
+            "question": "When did Twitter announce they were planning to shut down vine?",
+            "answer": "2016",
+            "value": 500
+          }
+        ]
+      }
+    ]
+  }
+}

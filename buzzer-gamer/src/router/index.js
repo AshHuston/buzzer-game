@@ -9,10 +9,15 @@ const router = createRouter({
       component: () => import('../views/BuzzerView.vue'),
     },
     {
-      path: '/hub',
-      name: 'hub',
+      path: '/host',
+      name: 'host',
       component: () => import('../views/HubView.vue'),
     },
+    {
+      path: '/gameboard',
+      name: 'gameboard',
+      component: () => import('../views/GameboardView.vue'),
+    }
   ],
 })
 
