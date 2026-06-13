@@ -12,7 +12,12 @@
     style="--width: 55vw;"
   >
     <wa-button slot="footer" @click="showAnswer=true">Show Answer</wa-button>
-    <h1>{{ question }}</h1>
+    <h1>
+      <span v-for="(char, index) in question" :key="index">
+        <span v-if="char === '♦' || char === '♥'" class="red-text">{{ char }}</span>
+        <template v-else>{{ char }}</template>
+      </span>
+    </h1>
     <wa-divider />
     <h1 v-if="showAnswer">{{ answer }}</h1>
     <h1 v-else class="blank">_</h1>
@@ -82,5 +87,9 @@ wa-divider {
 
 .pointsText {
   font-size: 4rem;
+}
+
+.red-text {
+  color: tomato;
 }
 </style>

@@ -10,7 +10,7 @@
             "value": 100
           },
           {
-            "question": "What is the term for a group of cards that share a common theme or mechanic, often released together in Magic: the Gathering?",
+            "question": "What is the term for a group of Magic: the Gathering cards that share a common theme or mechanic, often released in the same expansion set?",
             "answer": "A \"cycle\"",
             "value": 200
           },
@@ -70,23 +70,23 @@
             "value": 100
           },
           {
-            "question": "What is the term for hand of 10, Jack, Queen, King, Ace of the same suit?",
+            "question": "What is the term for hand of 10, Jack, Queen, King, Ace of the same suit? Which is the best possible hand.",
             "answer": "A Royal Flush",
             "value": 200
           },
           {
-            "question": "",
-            "answer": "",
+            "question": "In Texas Hold'em, what are the first three community cards called?",
+            "answer": "The Flop",
             "value": 300
           },
           {
-            "question": "",
-            "answer": "",
+            "question": "In Texas Hold'em, if the board is A♣ A♦ K♠ K♥ 2♣ and neither player has an Ace or King, who wins?",
+            "answer": "The player with the higher kicker",
             "value": 400
           },
           {
-            "question": "",
-            "answer": "",
+            "question": "You are holding pocket aces preflop in Texas Hold'em. What percentage of the time will you win against one random hand after all five community cards are dealt? (I will accept an answer within 5%)",
+            "answer": "~85.2%",
             "value": 500
           }
         ]
@@ -95,8 +95,8 @@
         "name": "Neil would know",
         "questions": [
           {
-            "question": "",
-            "answer": "",
+            "question": "Approximatley how long does it take sunlight to reach Earth?",
+            "answer": "~8 minutes",
             "value": 100
           },
           {
@@ -105,8 +105,8 @@
             "value": 200
           },
           {
-            "question": "",
-            "answer": "",
+            "question": "What is the term for the boundary around a black hole beyond which nothing (including light) can escape?",
+            "answer": "The event horizon",
             "value": 300
           },
           {
@@ -140,13 +140,13 @@
             "value": 300
           },
           {
-            "question": "",
-            "answer": "",
+            "question": "What 1914 assassination is widely considered the spark that ignited World War I?",
+            "answer": "The assassination of Archduke Franz Ferdinand",
             "value": 400
           },
           {
-            "question": "",
-            "answer": "",
+            "question": "Which emperor issued the Edict of Milan in 313 AD granting legal status to Christianity within the Roman Empire?",
+            "answer": "Constantine the Great",
             "value": 500
           }
         ]
@@ -241,6 +241,126 @@
           {
             "question": "What is the name of the opening that begins with the moves 1. d4 d5 2. c4 ...?",
             "answer": "The Queen's Gambit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "We’re going up up up",
+        "questions": [
+          {
+            "question": "What substance do climbers commonly put on their hands to keep them dry and improve grip?",
+            "answer": "Chalk",
+            "value": 100
+          },
+          {
+            "question": "What device is typically used to attach a rope to a climber’s harness and is essential for clipping protection on sport routes?",
+            "answer": "Carabiner",
+            "value": 200
+          },
+          {
+            "question": "What term is used for climbing without ropes or harnesses, usually on shorter routes with crash pads below?",
+            "answer": "Bouldering",
+            "value": 300
+          },
+          {
+            "question": "What is the name of the device used by a climber's partner to manage the rope and catch falls?",
+            "answer": "A belay device",
+            "value": 400
+          },
+          {
+            "question": "A climber reaches a section of rock where there are no obvious handholds or footholds and must rely heavily on friction between their shoes and the rock. What climbing technique is this called?",
+            "answer": "Smearing",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Its-a-me!",
+        "questions": [
+          {
+            "question": "What is the term for the valve that controls water flow into an entire house from the main supply line?",
+            "answer": "Main shutoff valve",
+            "value": 100
+          },
+          {
+            "question": "What is the name of the tool used to tighten or loosen pipe fittings with serrated jaws?",
+            "answer": "Pipe wrench",
+            "value": 200
+          },
+          {
+            "question": "What is the primary purpose of a P-trap under a sink?",
+            "answer": "To block sewer gases from coming back up through the drain",
+            "value": 300
+          },
+          {
+            "question": "What is the term for the vertical pipe that connects a building’s plumbing system to the main sewer line?",
+            "answer": "Building drain stack (or soil stack)",
+            "value": 400
+          },
+          {
+            "question": "What device uses air pressure or a spring mechanism to absorb sudden pressure changes in plumbing systems and prevent pipe damage?",
+            "answer": "Water hammer arrestor",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Aggress atop big guy",
+        "questions": [
+          {
+            "question": "In Attack on Titan, what is the military branch responsible for exploring outside the walls?",
+            "answer": "The Survey Corps (or scouts)",
+            "value": 100
+          },
+          {
+            "question": "What weapon is commonly used alongside ODM gear to attack Titan weak points?",
+            "answer": "Hardened Paring Blades",
+            "value": 200
+          },
+          {
+            "question": "The military in Attack on Titan uses special equipment called \"ODM\" gear to combat the titans. What does ODM stand for?",
+            "answer": "Omni-Directional Mobility",
+            "value": 300
+          },
+          {
+            "question": "What powers the military ODM gear?",
+            "answer": "Pressurized gas from Iceburst Stone",
+            "value": 400
+          },
+          {
+            "question": "What are all 9 titans spawned from the soul of Ymir?",
+            "answer": "Founding, Attack, Cart, Collosal, Armored, Jaw, Female, Beast, Warhammer",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "The good 'ol days",
+        "questions": [
+          {
+            "question": "What year did the first iPhone release?",
+            "answer": "2007",
+            "value": 100
+          },
+          {
+            "question": "What was the first video on Youtube.com to hit 1,000,000,000 (one billion) views?",
+            "answer": "Psy's \"Gangnam Style\"",
+            "value": 200
+          },
+          {
+            "question": "What year was Harambe shot?",
+            "answer":  "2016 - May he rest in peace",
+            "value": 300
+          },
+          {
+            "question": "Clear plastic surrounding a meta core, what is the name of the contact juggling toy that went viral in 2010?",
+            "answer": "The Fushigi Ball",
+            "value": 400
+          },
+          {
+            "question": "When did Twitter announce they were planning to shut down vine?",
+            "answer": "2016",
             "value": 500
           }
         ]
