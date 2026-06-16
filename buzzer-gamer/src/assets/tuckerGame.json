@@ -1,184 +1,310 @@
 {
-    "categories" :[
-        {
-            "name": "Category 1",
-            "questions": [
-                {
-                    "question": "What is the capital of France?",
-                    "answer": "Paris",
-                    "value": 100
-                },
-                {
-                    "question": "What is the largest planet in our solar system?",
-                    "answer": "Jupiter",
-                    "value": 200
-                },
-                {
-                    "question": "What is the chemical symbol for water?",
-                    "answer": "H2O",
-                    "value": 300
-                },
-                {
-                    "question": "Who painted the Mona Lisa?",
-                    "answer": "Leonardo da Vinci",
-                    "value": 400
-                },
-                {
-                    "question": "What is the smallest prime number?",
-                    "answer": "2",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Category 2",
-            "questions": [
-                {
-                    "question": "Who wrote 'To Kill a Mockingbird'?",
-                    "answer": "Harper Lee",
-                    "value": 100
-                },
-                {
-                    "question": "What is the chemical symbol for gold?",
-                    "answer": "Au",
-                    "value": 200
-                },
-                {
-                    "question": "What is the largest mammal?",
-                    "answer": "Blue Whale",
-                    "value": 300
-                },
-                {
-                    "question": "Who is the current president of the United States?",
-                    "answer": "Joe Biden",
-                    "value": 400
-                },
-                {
-                    "question": "What is the capital of Japan?",
-                    "answer": "Tokyo",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Science",
-            "questions": [
-                {
-                    "question": "What force keeps planets in orbit around the Sun?",
-                    "answer": "Gravity",
-                    "value": 100
-                },
-                {
-                    "question": "What gas do plants absorb from the atmosphere?",
-                    "answer": "Carbon Dioxide",
-                    "value": 200
-                },
-                {
-                    "question": "What is the hardest natural substance on Earth?",
-                    "answer": "Diamond",
-                    "value": 300
-                },
-                {
-                    "question": "What scientist developed the three laws of motion?",
-                    "answer": "Isaac Newton",
-                    "value": 400
-                },
-                {
-                    "question": "What particle carries a negative electric charge?",
-                    "answer": "Electron",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Movies",
-            "questions": [
-                {
-                    "question": "What color pill does Neo take in The Matrix?",
-                    "answer": "Red",
-                    "value": 100
-                },
-                {
-                    "question": "Who directed Jaws?",
-                    "answer": "Steven Spielberg",
-                    "value": 200
-                },
-                {
-                    "question": "What is the highest-grossing film of all time (without adjusting for inflation)?",
-                    "answer": "Avatar",
-                    "value": 300
-                },
-                {
-                    "question": "Which actor portrayed Iron Man in the Marvel Cinematic Universe?",
-                    "answer": "Robert Downey Jr.",
-                    "value": 400
-                },
-                {
-                    "question": "What 1942 film features the line 'Here's looking at you, kid'?",
-                    "answer": "Casablanca",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Geography",
-            "questions": [
-                {
-                    "question": "What is the largest ocean on Earth?",
-                    "answer": "Pacific Ocean",
-                    "value": 100
-                },
-                {
-                    "question": "What country is home to the Great Pyramids of Giza?",
-                    "answer": "Egypt",
-                    "value": 200
-                },
-                {
-                    "question": "What is the longest river in South America?",
-                    "answer": "Amazon River",
-                    "value": 300
-                },
-                {
-                    "question": "What is the capital city of Australia?",
-                    "answer": "Canberra",
-                    "value": 400
-                },
-                {
-                    "question": "Mount Kilimanjaro is located in what country?",
-                    "answer": "Tanzania",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Sports",
-            "questions": [
-                {
-                    "question": "How many players are on the field for one soccer team at a time?",
-                    "answer": "11",
-                    "value": 100
-                },
-                {
-                    "question": "In baseball, how many strikes make an out?",
-                    "answer": "3",
-                    "value": 200
-                },
-                {
-                    "question": "What sport uses the terms birdie and eagle?",
-                    "answer": "Golf",
-                    "value": 300
-                },
-                {
-                    "question": "Which country invented volleyball?",
-                    "answer": "United States",
-                    "value": 400
-                },
-                {
-                    "question": "What athlete has won the most Olympic gold medals?",
-                    "answer": "Michael Phelps",
-                    "value": 500
-                }
-            ]
-        }
+  "round1": {
+    "categories": [
+      {
+        "name": "Volleyball",
+        "questions": [
+          {
+            "question": "In volleyball, what is the maximum number of hits a team can take before sending the ball over the net?",
+            "answer": "3",
+            "value": 100
+          },
+          {
+            "question": "",
+            "answer": "Rotation",
+            "value": 200
+          },
+          {
+            "question": "What position is primarily responsible for setting up attacks and running the offense?",
+            "answer": "Setter",
+            "value": 300
+          },
+          {
+            "question": "What is the term for a back-row attack where a player jumps from behind the 3-meter line?",
+            "answer": "Pipe",
+            "value": 400
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Anime (Not One Piece)",
+        "questions": [
+          {
+            "question": "Which anime follows an orange-clad protaganist with the last name \"Uzumaki\"?",
+            "answer": "Naruto",
+            "value": 100
+          },
+          {
+            "question": "Which anime features All Might and Midoriya?",
+            "answer": "My Hero Academia",
+            "value": 200
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 300
+          },
+          {
+            "question": "Who is the Shinigami that drops the Death Note?",
+            "answer": "Ryuk",
+            "value": 400
+          },
+          {
+            "question": "",
+            "answer": "",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Gym / Workout",
+        "questions": [
+          {
+            "question": "What exercise primarily targets the chest and triceps using bodyweight?",
+            "answer": "Push-up",
+            "value": 100
+          },
+          {
+            "question": "What term describes the amount of weight lifted in an exercise?",
+            "answer": "Load",
+            "value": 200
+          },
+          {
+            "question": "Which muscle group is heavily used in deadlifts?",
+            "answer": "Posterior chain",
+            "value": 300
+          },
+          {
+            "question": "What principle refers to gradually increasing training stress over time?",
+            "answer": "Progressive overload",
+            "value": 400
+          },
+          {
+            "question": "What rep range is most associated with maximal strength development?",
+            "answer": "1–5 reps",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Science",
+        "questions": [
+          {
+            "question": "What is the basic unit of life?",
+            "answer": "Cell",
+            "value": 100
+          },
+          {
+            "question": "What force keeps planets in orbit?",
+            "answer": "Gravity",
+            "value": 200
+          },
+          {
+            "question": "What particle has a negative charge?",
+            "answer": "Electron",
+            "value": 300
+          },
+          {
+            "question": "What law states that energy cannot be created or destroyed, only transformed?",
+            "answer": "First law of thermodynamics",
+            "value": 400
+          },
+          {
+            "question": "What equation relates energy and mass?",
+            "answer": "E = mc^2",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "History",
+        "questions": [
+          {
+            "question": "What war was fought between the North and South of the United States?",
+            "answer": "American Civil War",
+            "value": 100
+          },
+          {
+            "question": "Which civilization built the pyramids of Giza?",
+            "answer": "Ancient Egyptians",
+            "value": 200
+          },
+          {
+            "question": "What document declared U.S. independence in 1776?",
+            "answer": "Declaration of Independence",
+            "value": 300
+          },
+          {
+            "question": "Which empire was ruled by Julius Caesar and Augustus?",
+            "answer": "Roman Empire",
+            "value": 400
+          },
+          {
+            "question": "What 1066 battle led to Norman control of England?",
+            "answer": "Battle of Hastings",
+            "value": 500
+          }
+        ]
+      }
     ]
+  },
+  "round2": {
+    "categories": [
+      {
+        "name": "One Piece",
+        "questions": [
+          {
+            "question": "What is Luffy's pirate crew called?",
+            "answer": "Straw Hat Pirates",
+            "value": 100
+          },
+          {
+            "question": "Who trained Luffy during the timeskip?",
+            "answer": "Silvers Rayleigh",
+            "value": 200
+          },
+          {
+            "question": "What Devil Fruit gives Luffy rubber-like abilities?",
+            "answer": "Gum-Gum Fruit",
+            "value": 300
+          },
+          {
+            "question": "What organization governs the world in One Piece?",
+            "answer": "World Government",
+            "value": 400
+          },
+          {
+            "question": "What ancient weapon is named after a god of the underworld?",
+            "answer": "Pluton",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Video Games",
+        "questions": [
+          {
+            "question": "What game features Creepers and block building?",
+            "answer": "Minecraft",
+            "value": 100
+          },
+          {
+            "question": "Which company created Mario and Zelda?",
+            "answer": "Nintendo",
+            "value": 200
+          },
+          {
+            "question": "What genre features permadeath and procedural generation?",
+            "answer": "Roguelike",
+            "value": 300
+          },
+          {
+            "question": "What game engine uses C# and is popular for indie games?",
+            "answer": "Unity",
+            "value": 400
+          },
+          {
+            "question": "What term describes reducing input delay by syncing frames?",
+            "answer": "Input buffering / latency compensation",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Geography",
+        "questions": [
+          {
+            "question": "What is the capital of France?",
+            "answer": "Paris",
+            "value": 100
+          },
+          {
+            "question": "Which continent has the most countries?",
+            "answer": "Africa",
+            "value": 200
+          },
+          {
+            "question": "What is the largest ocean on Earth?",
+            "answer": "Pacific Ocean",
+            "value": 300
+          },
+          {
+            "question": "Which mountain range separates Europe and Asia?",
+            "answer": "Ural Mountains",
+            "value": 400
+          },
+          {
+            "question": "What is the largest hot desert in the world?",
+            "answer": "Sahara Desert",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Biology",
+        "questions": [
+          {
+            "question": "What organ pumps blood throughout the body?",
+            "answer": "Heart",
+            "value": 100
+          },
+          {
+            "question": "What vitamin is produced when skin is exposed to sunlight?",
+            "answer": "Vitamin D",
+            "value": 200
+          },
+          {
+            "question": "What system includes the brain and spinal cord?",
+            "answer": "Central nervous system",
+            "value": 300
+          },
+          {
+            "question": "What gas is used by plants in photosynthesis?",
+            "answer": "Carbon dioxide",
+            "value": 400
+          },
+          {
+            "question": "What process produces two identical daughter cells?",
+            "answer": "Mitosis",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Physics",
+        "questions": [
+          {
+            "question": "What is the largest planet in our solar system?",
+            "answer": "Jupiter",
+            "value": 100
+          },
+          {
+            "question": "What force opposes motion between two surfaces?",
+            "answer": "Friction",
+            "value": 200
+          },
+          {
+            "question": "What element has the chemical symbol Fe?",
+            "answer": "Iron",
+            "value": 300
+          },
+          {
+            "question": "What law states every action has an equal and opposite reaction?",
+            "answer": "Newton's Third Law",
+            "value": 400
+          },
+          {
+            "question": "What phenomenon causes light to bend when passing between mediums?",
+            "answer": "Refraction",
+            "value": 500
+          }
+        ]
+      }
+    ]
+  }
 }

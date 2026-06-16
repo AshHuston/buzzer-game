@@ -2,7 +2,6 @@
 import { computed, onMounted, ref } from 'vue'
 import { io } from 'socket.io-client'
 import { useRoute } from 'vue-router'
-//import { computed } from 'vue'
 
 const route = useRoute()
 
@@ -135,7 +134,7 @@ onMounted(() => {
       light-dismiss
     >
       <div v-if="scoreboardIsTeamsMode"><p v-for="team, index in teams.sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ team.name }}: {{ team.score }}</p></div>
-      <div v-else><p v-for="player, index in [...players.filter(p => p.name !== 'hub')].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p></div>
+      <div v-else><p v-for="player, index in [...players.filter(p => p.name !== 'hub' && p.name !== 'panel')].sort((a, b) => b.score - a.score)" :key="index" class="scoreboard-line">{{ player.name }}: {{ player.score }}</p></div>
 
     </wa-dialog>
 
