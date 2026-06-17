@@ -118,7 +118,7 @@ io.on('connection', (socket) => {
     if (!game) return
     if (!game.teams) game.teams = []
     let team = game.teams.find(t => t.name === teamName)
-    
+
     if (!team) {
       game.teams.push({
         name: teamName,
@@ -133,5 +133,9 @@ io.on('connection', (socket) => {
 
   socket.on('setScoreboardMode', ({gameCode, isTeamsMode}) =>{
     io.to(gameCode).emit('applyScoreboardMode', isTeamsMode)
+  })
+
+  socket.on('showRound2', ({gameCode, isRound2}) =>{
+    io.to(gameCode).emit('applyRound2Mode', isRound2)
   })
 })

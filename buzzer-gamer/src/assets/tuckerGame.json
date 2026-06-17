@@ -1,184 +1,370 @@
 {
-    "categories" :[
-        {
-            "name": "Category 1",
-            "questions": [
-                {
-                    "question": "What is the capital of France?",
-                    "answer": "Paris",
-                    "value": 100
-                },
-                {
-                    "question": "What is the largest planet in our solar system?",
-                    "answer": "Jupiter",
-                    "value": 200
-                },
-                {
-                    "question": "What is the chemical symbol for water?",
-                    "answer": "H2O",
-                    "value": 300
-                },
-                {
-                    "question": "Who painted the Mona Lisa?",
-                    "answer": "Leonardo da Vinci",
-                    "value": 400
-                },
-                {
-                    "question": "What is the smallest prime number?",
-                    "answer": "2",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Category 2",
-            "questions": [
-                {
-                    "question": "Who wrote 'To Kill a Mockingbird'?",
-                    "answer": "Harper Lee",
-                    "value": 100
-                },
-                {
-                    "question": "What is the chemical symbol for gold?",
-                    "answer": "Au",
-                    "value": 200
-                },
-                {
-                    "question": "What is the largest mammal?",
-                    "answer": "Blue Whale",
-                    "value": 300
-                },
-                {
-                    "question": "Who is the current president of the United States?",
-                    "answer": "Joe Biden",
-                    "value": 400
-                },
-                {
-                    "question": "What is the capital of Japan?",
-                    "answer": "Tokyo",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Science",
-            "questions": [
-                {
-                    "question": "What force keeps planets in orbit around the Sun?",
-                    "answer": "Gravity",
-                    "value": 100
-                },
-                {
-                    "question": "What gas do plants absorb from the atmosphere?",
-                    "answer": "Carbon Dioxide",
-                    "value": 200
-                },
-                {
-                    "question": "What is the hardest natural substance on Earth?",
-                    "answer": "Diamond",
-                    "value": 300
-                },
-                {
-                    "question": "What scientist developed the three laws of motion?",
-                    "answer": "Isaac Newton",
-                    "value": 400
-                },
-                {
-                    "question": "What particle carries a negative electric charge?",
-                    "answer": "Electron",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Movies",
-            "questions": [
-                {
-                    "question": "What color pill does Neo take in The Matrix?",
-                    "answer": "Red",
-                    "value": 100
-                },
-                {
-                    "question": "Who directed Jaws?",
-                    "answer": "Steven Spielberg",
-                    "value": 200
-                },
-                {
-                    "question": "What is the highest-grossing film of all time (without adjusting for inflation)?",
-                    "answer": "Avatar",
-                    "value": 300
-                },
-                {
-                    "question": "Which actor portrayed Iron Man in the Marvel Cinematic Universe?",
-                    "answer": "Robert Downey Jr.",
-                    "value": 400
-                },
-                {
-                    "question": "What 1942 film features the line 'Here's looking at you, kid'?",
-                    "answer": "Casablanca",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Geography",
-            "questions": [
-                {
-                    "question": "What is the largest ocean on Earth?",
-                    "answer": "Pacific Ocean",
-                    "value": 100
-                },
-                {
-                    "question": "What country is home to the Great Pyramids of Giza?",
-                    "answer": "Egypt",
-                    "value": 200
-                },
-                {
-                    "question": "What is the longest river in South America?",
-                    "answer": "Amazon River",
-                    "value": 300
-                },
-                {
-                    "question": "What is the capital city of Australia?",
-                    "answer": "Canberra",
-                    "value": 400
-                },
-                {
-                    "question": "Mount Kilimanjaro is located in what country?",
-                    "answer": "Tanzania",
-                    "value": 500
-                }
-            ]
-        },
-        {
-            "name": "Sports",
-            "questions": [
-                {
-                    "question": "How many players are on the field for one soccer team at a time?",
-                    "answer": "11",
-                    "value": 100
-                },
-                {
-                    "question": "In baseball, how many strikes make an out?",
-                    "answer": "3",
-                    "value": 200
-                },
-                {
-                    "question": "What sport uses the terms birdie and eagle?",
-                    "answer": "Golf",
-                    "value": 300
-                },
-                {
-                    "question": "Which country invented volleyball?",
-                    "answer": "United States",
-                    "value": 400
-                },
-                {
-                    "question": "What athlete has won the most Olympic gold medals?",
-                    "answer": "Michael Phelps",
-                    "value": 500
-                }
-            ]
-        }
+  "round1": {
+    "categories": [
+      {
+        "name": "WILSON!!!",
+        "questions": [
+          {
+            "question": "In volleyball, what is the maximum number of hits a team can take before sending the ball over the net?",
+            "answer": "3",
+            "value": 100
+          },
+          {
+            "question": "What do you call a serve in volleyball that results in an immediate point because the other team fails to return it?",
+            "answer": "Ace",
+            "value": 200
+          },
+          {
+            "question": "What volleyball position is usually responsible for delivering the second contact and directing the offense?",
+            "answer": "Setter",
+            "value": 300
+          },
+          {
+            "question": "In indoor volleyball, what defensive position wears a different-colored jersey and cannot complete a front-row overhead score attempt above the height of the net?",
+            "answer": "Libero",
+            "value": 400
+          },
+          {
+            "question": "What must be true for a back-row player to legally send a ball over the net with force above net height?",
+            "answer": "They must take off from behind the 3-meter line",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "That's gotta be at least 2 pieces",
+        "questions": [
+          {
+            "question": "Which anime follows an orange-clad protaganist with the last name \"Uzumaki\"?",
+            "answer": "Naruto",
+            "value": 100
+          },
+          {
+            "question": "Which anime features All Might and Midoriya?",
+            "answer": "My Hero Academia",
+            "value": 200
+          },
+          {
+            "question": "Who is the Shinigami that drops the Death Note?",
+            "answer": "Ryuk",
+            "value": 300
+          },
+          {
+            "question": "Which anime was canceled because the manga author was unhappy with the studio making the anime?",
+            "answer": "Fruits Basket",
+            "value": 400
+          },
+          {
+            "question": "In 1997, an episode of which anime featured rapidly flashing red and blue lights reportedly caused hundreds of Japanese children to experience seizures and other symptoms, leading to the episode being pulled from broadcast.",
+            "answer": "Pokemon (episode 38 \"Cyber Soldier Porygon\"",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "weergunna-pampyoouap",
+        "questions": [
+          {
+            "question": "What exercise primarily targets the chest and triceps using bodyweight?",
+            "answer": "Push-up",
+            "value": 100
+          },
+          {
+            "question": "What type of exercise primarily improves heart and lung endurance, such as running or cycling?",
+            "answer": "Cardio (cardiovascular)",
+            "value": 200
+          },
+          {
+            "question": "What principle refers to gradually increasing training stress over time?",
+            "answer": "Progressive overload",
+            "value": 300
+          },
+          {
+            "question": "What is the name of the physiological process where muscle fibers grow larger due to resistance training?",
+            "answer": "Hypertrophy",
+            "value": 400
+          },
+          {
+            "question": "Which muscle group is heavily used in deadlifts?",
+            "answer": "Posterior chain",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Green on trivia crack",
+        "questions": [
+          {
+            "question": "What is the basic unit of life?",
+            "answer": "Cell",
+            "value": 100
+          },
+          {
+            "question": "What force keeps planets in orbit?",
+            "answer": "Gravity",
+            "value": 200
+          },
+          {
+            "question": "What subatomic particle has a negative charge?",
+            "answer": "Electron",
+            "value": 300
+          },
+          {
+            "question": "What law states that energy cannot be created or destroyed, only transformed?",
+            "answer": "First law of thermodynamics",
+            "value": 400
+          },
+          {
+            "question": "What equation is famously related to the Special Theory of Relativity?",
+            "answer": "E = mc^2",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Signs at the zoo",
+        "questions": [
+          {
+            "question": "What is the largest living species of lizard?",
+            "answer": "Komodo dragon",
+            "value": 100
+          },
+          {
+            "question": "What is the largest species of shark?",
+            "answer": "The whale shark",
+            "value": 200
+          },
+          {
+            "question": "What animal produces cubic feces?",
+            "answer": "The wombat",
+            "value": 300
+          },
+          {
+            "question": "What is required for an organism to be considered a new distinct species?",
+            "answer": "It must be different enough from its nearest relatives to be unable to interbreed and create fertile offspring",
+            "value": 400
+          },
+          {
+            "question": "What land animal has the highest blood pressure of any mammal?",
+            "answer": "Giraffe (gotta get blood to the head)",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Their-story",
+        "questions": [
+          {
+            "question": "What war was fought between the North and South of the United States?",
+            "answer": "American Civil War",
+            "value": 100
+          },
+          {
+            "question": "What document (sought after by Sean Bean) was signed in 1776 by John Hancock, among others?",
+            "answer": "Declaration of Independence",
+            "value": 200
+          },
+          {
+            "question": "Ratified in 1920, what was the content of the 19th amendment to the constitution?",
+            "answer": "Women's right to vote",
+            "value": 300
+          },
+          {
+            "question": "What was the name of the secret project during World War II that developed the first atomic bombs?",
+            "answer": "The Manhattan Project",
+            "value": 400
+          },
+          {
+            "question": "What 1972 break-in at the Democratic National Committee headquarters eventually led to President Nixon's resignation?",
+            "answer": "The Watergate Scandal",
+            "value": 500
+          }
+        ]
+      }
     ]
+  },
+  "round2": {
+    "categories": [
+      {
+        "name": "That's gotta be less than 2 pieces",
+        "questions": [
+          {
+            "question": "What is Luffy's pirate crew called?",
+            "answer": "Straw Hat Pirates",
+            "value": 100
+          },   
+          {
+            "question": "What Devil Fruit gives Luffy rubber-like abilities?",
+            "answer": "Gum-Gum Fruit",
+            "value": 200
+          },
+          {
+            "question": "Who trained Luffy during the timeskip?",
+            "answer": "Silvers Rayleigh",
+            "value": 300
+          },
+          {
+            "question": "What organization controls the world in One Piece?",
+            "answer": "World Government",
+            "value": 400
+          },
+          {
+            "question": "What ancient weapon is named after a god of the underworld?",
+            "answer": "Pluton",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "A unqiue medium indeed",
+        "questions": [
+          {
+            "question": "What game features block building and can have computers built in it?",
+            "answer": "Minecraft",
+            "value": 100
+          },
+          {
+            "question": "In The Elder Scrolls V: Skyrim, what is the ancient language used to perform Shouts?",
+            "answer": "The draconic language (Dovahzul)",
+            "value": 200
+          },
+          {
+            "question": "What genre is defined by permadeath and procedural generation?",
+            "answer": "Roguelike",
+            "value": 300
+          },
+          {
+            "question": "What game engine uses C# and is popular for both 2d and 3d indie games?",
+            "answer": "Unity",
+            "value": 400
+          },
+          {
+            "question": "What arcade game became the first video game to be played in outer space when Russian cosmonaut Aleksandr Serebrov took a GameBoy aboard the Mir space station in 1993?",
+            "answer": "Tetris",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "wheredat- stuffat",
+        "questions": [
+          {
+            "question": "What is the capital of France?",
+            "answer": "Paris",
+            "value": 100
+          },
+          {
+            "question": "What is the largest ocean on Earth?",
+            "answer": "Pacific Ocean",
+            "value": 200
+          },
+          {
+            "question": "Which continent has the most countries?",
+            "answer": "Africa",
+            "value": 300
+          },
+          {
+            "question": "Which mountain range separates Europe and Asia?",
+            "answer": "Ural Mountains",
+            "value": 400
+          },
+          {
+            "question": "What is the largest desert in the world?",
+            "answer": "Antarctic Desert",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Between monology and triology",
+        "questions": [
+          {
+            "question": "What sub-cellular structure is known as \"the powerhouse of the cell\"?",
+            "answer": "Mitochondria",
+            "value": 100
+          },
+          {
+            "question": "What vitamin is produced when skin is exposed to sunlight?",
+            "answer": "Vitamin D",
+            "value": 200
+          },
+          {
+            "question": "What bodily system includes the brain and spinal cord?",
+            "answer": "Central nervous system",
+            "value": 300
+          },
+          {
+            "question": "What gas is consumed by plants in photosynthesis?",
+            "answer": "Carbon dioxide",
+            "value": 400
+          },
+          {
+            "question": "What celluar process produces two identical daughter cells?",
+            "answer": "Mitosis",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Like ESP or terot cards?",
+        "questions": [
+          {
+            "question": "What element has the chemical symbol Fe?",
+            "answer": "Iron",
+            "value": 100
+          },
+          {
+            "question": "Household circuit breakers are often rated at 15 or 20 of what units, which measure electrical current?",
+            "answer": "Amperes (amp)",
+            "value": 200
+          },
+          {
+            "question": "What does Newton's Third Law of physics state?",
+            "answer": "Every action has an equal and opposite reaction",
+            "value": 300
+          },
+          {
+           "question": "What phenomenon causes light to bend when passing between mediums?",
+            "answer": "Refraction",
+            "value": 400
+          },
+          {
+            "question": "The famous equation E = mc² relates energy to mass and the square of what physical constant?",
+            "answer": "The speed of light",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Not the blue people",
+        "questions": [
+          {
+            "question": "What are the four bendable elements in the world of Avatar the Last Airbender",
+            "answer": "",
+            "value": 100
+          },
+          {
+            "question": "What is the name of the high security prison in the fire nation situated in a boiling lake?",
+            "answer": "The Boiling Rock",
+            "value": 200
+          },
+          {
+            "question": "What firebending technique, inspired by waterbending, does Zuko employ on several occasions?",
+            "answer": "Lightning Redirection",
+            "value": 300
+          },
+          {
+           "question": "Name as many Avatars as possible, in reverse order, starting with Aang.",
+            "answer": "Aang < Roku < Kyoshi < Kuruk < Yangchen < Szeto",
+            "value": 400
+          },
+          {
+            "question": "What is the the name of the mother of Zuko and Azula?",
+            "answer": "Ursa",
+            "value": 500
+          }
+        ]
+      }
+    ]
+  }
 }

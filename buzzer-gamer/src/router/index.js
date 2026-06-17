@@ -17,6 +17,11 @@ const router = createRouter({
       path: '/gameboard',
       name: 'gameboard',
       component: () => import('../views/GameboardView.vue'),
+    },
+    {
+      path: '/panel',
+      name: 'control-panel',
+      component: () => import('../views/ControlPanelView.vue'),
     }
   ],
 })
