@@ -92,7 +92,7 @@ import Gameboard from '@/components/GameBoard.vue';
 import { io } from 'socket.io-client'
 import { onMounted, ref, computed, onBeforeUnmount } from 'vue';
 import { useRoute } from 'vue-router'
-import game from '@/assets/nicholasGame.json'
+import game from '@/assets/lakeGame.json'
 
 const route = useRoute()
 

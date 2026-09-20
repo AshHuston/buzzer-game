@@ -1,0 +1,371 @@
+{
+  "round1": {
+    "categories": [
+
+        {
+        "name": "Fun for the whole family!",
+        "questions": [
+            {
+            "question": "What variant of Canasta uses three decks and is also known as Hand and Foot?",
+            "answer": "Pennies",
+            "value": 100
+            },
+            {
+            "question": "In Euchre, if all players pass on the flipped-up card and it returns to the dealer, what is this called?",
+            "answer": "Sticking the dealer",
+            "value": 200
+            },
+            {
+            "question": "D&D dice typically come in sets of seven. How many sides does the largest standard die have?",
+            "answer": "20",
+            "value": 300
+            },
+            {
+            "question": "How many spaces are on a standard Monopoly board?",
+            "answer": "40",
+            "value": 400
+            },
+            {
+            "question": "How many resource cards are included in a base game of Settlers of Catan?",
+            "answer": "95",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "Anna made this category",
+        "questions": [
+            {
+            "question": "How old is Taylor Swift?",
+            "answer": "36",
+            "value": 100
+            },
+            {
+            "question": "What are Taylor Swift's cats' names?",
+            "answer": "Meredith, Olivia, and Benjamin",
+            "value": 200
+            },
+            {
+            "question": "What was the date of Taylor Swift's wedding?",
+            "answer": "July 3, 2026",
+            "value": 300
+            },
+            {
+            "question": "What baked good did Taylor Swift talk most about in 2025–2026?",
+            "answer": "Sourdough bread",
+            "value": 400
+            },
+            {
+            "question": "What album is 'If This Was a Movie' from?",
+            "answer": "Speak Now and Fearless (Taylor's Version)",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "Piles of Men",
+        "questions": [
+            {
+            "question": "In the NFL, how many players are on the field during a play?",
+            "answer": "22",
+            "value": 100
+            },
+            {
+            "question": "What is the maximum number of points a football team can score before handing possession to the other team?",
+            "answer": "8",
+            "value": 200
+            },
+            {
+            "question": "What is the only jersey number not allowed in the NFL?",
+            "answer": "00",
+            "value": 300
+            },
+            {
+            "question": "Which NFL team is the only one with a left-facing logo?",
+            "answer": "Philadelphia Eagles",
+            "value": 400
+            },
+            {
+            "question": "Which team holds the record for the fewest rushing yards in an NFL season?",
+            "answer": "Detroit Lions",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "Not mellennial, not GenZ",
+        "questions": [
+            {
+            "question": "The first 3D Mario platformer, Super Mario 64, was released for which console?",
+            "answer": "Nintendo 64",
+            "value": 100
+            },
+            {
+            "question": "What Cartoon Network show featured a kid who could transform into many alien forms?",
+            "answer": "Ben 10",
+            "value": 200
+            },
+            {
+            "question": "What Nintendo DS game had players collecting and resurrecting dinosaurs to battle with?",
+            "answer": "Fossil Fighters",
+            "value": 300
+            },
+            {
+            "question": "What Disney Princess movie released in 2010 starring Mandy Moore?",
+            "answer": "Tangled",
+            "value": 400
+            },
+            {
+            "question": "What year did Pokémon Platinum release?",
+            "answer": "2008",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "Tech support",
+        "questions": [
+            {
+            "question": "Typically called the CPU, what is the full name of the main brain of a computer?",
+            "answer": "Central Processing Unit",
+            "value": 100
+            },
+            {
+            "question": "How many gigabytes are in a terabyte?",
+            "answer": "1024",
+            "value": 200
+            },
+            {
+            "question": "What does USB stand for?",
+            "answer": "Universal Serial Bus",
+            "value": 300
+            },
+            {
+            "question": "What year was the first commercially available computer sold?",
+            "answer": "1951",
+            "value": 400
+            },
+            {
+            "question": "What is the core difference between quantum computing and binary computing?",
+            "answer": "Binary computers store information in one of two states, while quantum computers store information as a superposition of those states",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "RAWR XD",
+        "questions": [
+            {
+            "question": "What does the T in T-Rex stand for?",
+            "answer": "Tyrannosaurus",
+            "value": 100
+            },
+            {
+            "question": "What living animal is the closest genetic relative to dinosaurs?",
+            "answer": "Chicken",
+            "value": 200
+            },
+            {
+            "question": "Which dinosaur's name means 'swift seizer'?",
+            "answer": "Velociraptor",
+            "value": 300
+            },
+            {
+            "question": "What Cretaceous dinosaur had a large club-like growth at the end of its tail?",
+            "answer": "Ankylosaurus",
+            "value": 400
+            },
+            {
+            "question": "Where is Sue, the most complete T-Rex skeleton, displayed?",
+            "answer": "Chicago's Field Museum of Natural History",
+            "value": 500
+            }
+        ]
+        }
+    ]
+    },
+    "round2":{
+    "categories": [
+                {
+        "name": "Disney",
+        "questions": [
+            {
+            "question": "What is the name of Disney's CGI animation studio?",
+            "answer": "Pixar",
+            "value": 100
+            },
+            {
+            "question": "What was the first computer-animated film released by Disney?",
+            "answer": "Toy Story (1995)",
+            "value": 200
+            },
+            {
+            "question": "In Monsters, Inc., Mike and Celia go on a date to a fancy restaurant. What was it called?",
+            "answer": "Harryhausen's",
+            "value": 300
+            },
+            {
+            "question": "In March 2026, Disney got a new CEO who has been in the news for pushing back against various woke and gender ideologies. What is this new CEO's name?",
+            "answer": "Josh D'Amaro",
+            "value": 400
+            },
+            {
+            "question": "Christmas Eve, 1970 marks the release of the last animated film Walt Disney was directly involved with because he died during production. What film was this?",
+            "answer": "The Aristocats",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "Not the blue people",
+        "questions": [
+            {
+            "question": "Avatar Aang has an animal companion named Appa. What is Appa?",
+            "answer": "A flying sky bison",
+            "value": 100
+            },
+            {
+            "question": "What city did Team Avatar meet King Bumi in?",
+            "answer": "Omashu",
+            "value": 200
+            },
+            {
+            "question": "What is the name of the international secret society in Avatar: The Last Airbender with goals above the four nations?",
+            "answer": "The White Lotus",
+            "value": 300
+            },
+            {
+            "question": "The Fire Nation had a tradition of hunting dragons for prestige. What title was granted to anyone who could conquer one?",
+            "answer": "Dragon",
+            "value": 400
+            },
+            {
+            "question": "Starting with Avatar Aang and working backward, name as many Avatars in order as you can.",
+            "answer": "Aang, Roku, Kyoshi, Kuruk, Yangchen, Szeto",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "Why can't we all just get along?",
+        "questions": [
+            {
+            "question": "What happened on September 1, 1939?",
+            "answer": "Germany invaded Poland, kicking off World War II",
+            "value": 100
+            },
+            {
+            "question": "What was the name of the war in which Arab nations attacked Israel but ended up losing very quickly?",
+            "answer": "The Six-Day War",
+            "value": 200
+            },
+            {
+            "question": "After what war did Pheidippides run more than 40 kilometers to Athens to announce the Greek victory?",
+            "answer": "The Battle of Marathon",
+            "value": 300
+            },
+            {
+            "question": "Where was Archduke Franz Ferdinand when he was killed?",
+            "answer": "Bosnia",
+            "value": 400
+            },
+            {
+            "question": "What ancient civilization was defeated at the Battle of Qadesh?",
+            "answer": "The Hittites",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "What a kingdom",
+        "questions": [
+            {
+            "question": "What is the only mammal that lays eggs?",
+            "answer": "The platypus",
+            "value": 100
+            },
+            {
+            "question": "How long is a whale shark, plus or minus one meter?",
+            "answer": "19 meters",
+            "value": 200
+            },
+            {
+            "question": "What land animal has the highest resting blood pressure?",
+            "answer": "The giraffe",
+            "value": 300
+            },
+            {
+            "question": "What is unique about the octopus's brain?",
+            "answer": "It is ring-shaped",
+            "value": 400
+            },
+            {
+            "question": "How long can sloths hold their breath?",
+            "answer": "About 40 minutes",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "Name That Tune",
+        "questions": [
+            {
+            "question": "Name the song containing this lyric: 'Some will win. Some will lose. Some were born to sing the blues.'",
+            "answer": "Don't Stop Believin' - Journey",
+            "value": 100
+            },
+            {
+            "question": "Name the song containing this lyric: 'Some folks were born silver spoon in hand.'",
+            "answer": "Fortunate Son - Creedence Clearwater Revival",
+            "value": 200
+            },
+            {
+            "question": "Name the song containing this lyric: 'You're the reason that I just can't concentrate.'",
+            "answer": "All Time Low - Jon Bellion",
+            "value": 300
+            },
+            {
+            "question": "Name the song containing this lyric: 'Millions of people living as foes.'",
+            "answer": "Crazy Train - Ozzy Osbourne",
+            "value": 400
+            },
+            {
+            "question": "Name the song containing this lyric: 'Show us how.'",
+            "answer": "Bezos I - Bo Burnham",
+            "value": 500
+            }
+        ]
+        },
+        {
+        "name": "Not Blue's Clues",
+        "questions": [
+            {
+            "question": "What is the name of Bluey's little sister?",
+            "answer": "Bingo",
+            "value": 100
+            },
+            {
+            "question": "What kind of dog is Bluey?",
+            "answer": "Australian Cattle Dog (Blue Heeler)",
+            "value": 200
+            },
+            {
+            "question": "Where do Bluey and her family live?",
+            "answer": "Brisbane, Australia",
+            "value": 300
+            },
+            {
+            "question": "What is Bandit's occupation?",
+            "answer": "Archaeologist",
+            "value": 400
+            },
+            {
+            "question": "What year did the first episode of Bluey air?",
+            "answer": "2018",
+            "value": 500
+            }
+        ]
+        }
+    ]
+  }
+}
