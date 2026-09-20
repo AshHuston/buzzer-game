@@ -1,7 +1,11 @@
 <template>
   <div class="wa-split page">
     <div class="gameboardContainer">
-      <gameboard v-if="game.round1.categories && !showRound2" :categories="game.round1.categories" />
+      <gameboard
+        v-if="game.round1.categories && !showRound2"
+        :categories="game.round1.categories"
+        @set-answer="onAnswerChange"
+      />
       <gameboard v-if="game.round2.categories && showRound2" :categories="game.round2.categories" />
     </div>
     <div class="wa-stack wa-gap-m sidebar">
@@ -12,14 +16,14 @@
                 size="100"
                 @click="qrCodeZoom = !qrCodeZoom"
             ></wa-qr-code>
-            <wa-button @click="resetBuzzers" style="width: 70%; margin: auto">RESET BUZZERS</wa-button>
+            <wa-button v-if="displayControls" @click="resetBuzzers" style="width: 70%; margin: auto">RESET BUZZERS</wa-button>
             <wa-checkbox @change="showRound2 = $event.target.checked">Round 2</wa-checkbox>
             <wa-checkbox @change="setScoreboardMode($event.target.checked)">Team mode</wa-checkbox>
         </div>
         <div class="scoreButtonList">
             <p class="caption">Scores:</p>
             <div v-if="isTeamMode">
-                <div v-if="displayScoreButtons" class="wa-cluster">
+                <div v-if="displayControls" class="wa-cluster">
                     <wa-input
                         placeholder="Team Name"
                         :value="teamNameInput"
@@ -34,7 +38,7 @@
                     class="wa-split name"
                 >
                     <span>{{ team.name }}: {{ team.score }}</span>
-                    <div v-if="displayScoreButtons">
+                    <div v-if="displayControls">
                         <wa-button
                             v-for="points, index in pointButtonValues"
                             :key="index"
@@ -94,7 +98,7 @@ import { onMounted, ref, computed, onBeforeUnmount } from 'vue';
 import { useRoute } from 'vue-router'
 import game from '@/assets/lakeGame.json'
 
-const displayScoreButtons = false;
+const displayControls = false;
 
 const route = useRoute()
 
@@ -164,6 +168,11 @@ function randomCode(length = 4) {
 
 function resetBuzzers() {
     socket.emit('resetBuzz', { gameCode: gameCode.value })
+}
+
+function onAnswerChange(answer){
+  socket.emit('changeActiveAnswer', { answer: answer, gameCode: gameCode.value })
+  console.log('page', answer)
 }
 
 function addNewTeam() {

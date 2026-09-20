@@ -16,6 +16,7 @@
           :question="question.question"
           :answer="question.answer"
           :value="question.value"
+          @set-answer="setCurrentAnswer"
         />
       </div>
     </div>
@@ -31,6 +32,13 @@ defineProps({
     required: true
   }
 })
+
+const emit = defineEmits('setAnswer');
+
+function setCurrentAnswer(answer) {
+    emit('setAnswer', answer)
+    console.log('baord', answer)
+}
 
 </script>
 

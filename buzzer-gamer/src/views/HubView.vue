@@ -20,6 +20,7 @@ const pointButtonValues = [
 ]
 
 const teams = ref([])
+const activeAnswer = ref('')
 
 const socket = io();
 
@@ -30,6 +31,7 @@ socket.on('buzzOrderUpdated', (order) => {buzzList.value = order})
 socket.on('buzzReset', () => {buzzList.value = []})
 socket.on("playersUpdated", (playerList) => {players.value = playerList})
 socket.on("teamsUpdated", (teamsList) => {teams.value = teamsList})
+socket.on("setActiveAnswer", (answer) => {activeAnswer.value = answer.answer; console.log('hub received emit')})
 
 onMounted(() => {
     gameCode.value = gameCode.value == '' ? randomCode() : gameCode.value.toUpperCase()
@@ -86,6 +88,11 @@ function setScoreboardMode(e){
         <div class="wa-cluster">
             <wa-button @click="resetBuzzers" style="width: 60%; margin: auto">RESET BUZZERS</wa-button>
             <wa-checkbox :checked="isTeamMode" @change="setScoreboardMode($event.target.checked)">Team mode</wa-checkbox>
+        </div>
+        <div v-if="activeAnswer!==''">
+          <h2>Answer:</h2>
+          <p>{{ activeAnswer }}</p>
+          <wa-divider></wa-divider>
         </div>
         <div class="scoreButtonList">
             <h2>Scores:</h2>

@@ -9,6 +9,7 @@
     light-dismiss
     class="question-dialog"
     @open="modalWasOpened = true"
+    @wa-hide="setCurrentAnswer(' ')"
     style="--width: 55vw;"
   >
     <wa-button slot="footer" @click="showAnswer=true">Show Answer</wa-button>
@@ -30,7 +31,15 @@ import { ref } from 'vue'
 const dialogRef = ref()
 
 function openDialog() {
-  dialogRef.value.open = true
+  dialogRef.value.open = true;
+  setCurrentAnswer(props.answer);
+}
+
+const emit = defineEmits('setAnswer');
+
+function setCurrentAnswer(answer) {
+    emit('setAnswer', answer)
+    console.log('tile', answer)
 }
 
 const props = defineProps({

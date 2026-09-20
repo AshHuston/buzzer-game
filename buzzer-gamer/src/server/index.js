@@ -89,6 +89,12 @@ io.on('connection', (socket) => {
     io.to(gameCode).emit('buzzReset')
   })
 
+  socket.on('changeActiveAnswer', ({ answer, gameCode }) => {
+    if (!games[gameCode]) return
+    console.log(`Changed answer to: ${answer}`)
+    io.to(gameCode).emit('setActiveAnswer', { answer })
+  })
+
   socket.on('disconnect', () => {
     console.log('Disconnected:', socket.id)
 
@@ -118,7 +124,7 @@ io.on('connection', (socket) => {
     if (!game) return
     if (!game.teams) game.teams = []
     let team = game.teams.find(t => t.name === teamName)
-    
+
     if (!team) {
       game.teams.push({
         name: teamName,
