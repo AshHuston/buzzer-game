@@ -19,7 +19,7 @@
         <div class="scoreButtonList">
             <p class="caption">Scores:</p>
             <div v-if="isTeamMode">
-                <div class="wa-cluster">
+                <div v-if="displayScoreButtons" class="wa-cluster">
                     <wa-input
                         placeholder="Team Name"
                         :value="teamNameInput"
