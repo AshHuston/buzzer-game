@@ -186,186 +186,186 @@
     },
     "round2":{
     "categories": [
-                {
+    {
         "name": "Disney",
         "questions": [
             {
-            "question": "What is the name of Disney's CGI animation studio?",
-            "answer": "Pixar",
-            "value": 100
+                "question": "What is the name of Disney's CGI animation studio?",
+                "answer": "Pixar",
+                "value": 200
             },
             {
-            "question": "What was the first computer-animated film released by Disney?",
-            "answer": "Toy Story (1995)",
-            "value": 200
+                "question": "What was the first computer-animated film released by Disney?",
+                "answer": "Toy Story (1995)",
+                "value": 400
             },
             {
-            "question": "In Monsters, Inc., Mike and Celia go on a date to a fancy restaurant. What was it called?",
-            "answer": "Harryhausen's",
-            "value": 300
+                "question": "In Monsters, Inc., Mike and Celia go on a date to a fancy restaurant. What was it called?",
+                "answer": "Harryhausen's",
+                "value": 600
             },
             {
-            "question": "In March 2026, Disney got a new CEO who has been in the news for pushing back against various woke and gender ideologies. What is this new CEO's name?",
-            "answer": "Josh D'Amaro",
-            "value": 400
+                "question": "In March 2026, Disney got a new CEO who has been in the news for pushing back against various woke and gender ideologies. What is this new CEO's name?",
+                "answer": "Josh D'Amaro",
+                "value": 800
             },
             {
-            "question": "Christmas Eve, 1970 marks the release of the last animated film Walt Disney was directly involved with because he died during production. What film was this?",
-            "answer": "The Aristocats",
-            "value": 500
+                "question": "Christmas Eve, 1970 marks the release of the last animated film Walt Disney was directly involved with because he died during production. What film was this?",
+                "answer": "The Aristocats",
+                "value": 1000
             }
         ]
-        },
-        {
+    },
+    {
         "name": "Not the blue people",
         "questions": [
             {
-            "question": "Avatar Aang has an animal companion named Appa. What is Appa?",
-            "answer": "A flying sky bison",
-            "value": 100
+                "question": "Avatar Aang has an animal companion named Appa. What is Appa?",
+                "answer": "A flying sky bison",
+                "value": 200
             },
             {
-            "question": "What city did Team Avatar meet King Bumi in?",
-            "answer": "Omashu",
-            "value": 200
+                "question": "What city did Team Avatar meet King Bumi in?",
+                "answer": "Omashu",
+                "value": 400
             },
             {
-            "question": "What is the name of the international secret society in Avatar: The Last Airbender with goals above the four nations?",
-            "answer": "The White Lotus",
-            "value": 300
+                "question": "What is the name of the international secret society in Avatar: The Last Airbender with goals above the four nations?",
+                "answer": "The White Lotus",
+                "value": 600
             },
             {
-            "question": "The Fire Nation had a tradition of hunting dragons for prestige. What title was granted to anyone who could conquer one?",
-            "answer": "Dragon",
-            "value": 400
+                "question": "The Fire Nation had a tradition of hunting dragons for prestige. What title was granted to anyone who could conquer one?",
+                "answer": "Dragon",
+                "value": 800
             },
             {
-            "question": "Starting with Avatar Aang and working backward, name as many Avatars in order as you can.",
-            "answer": "Aang, Roku, Kyoshi, Kuruk, Yangchen, Szeto",
-            "value": 500
+                "question": "Starting with Avatar Aang and working backward, name as many Avatars in order as you can.",
+                "answer": "Aang, Roku, Kyoshi, Kuruk, Yangchen, Szeto",
+                "value": 1000
             }
         ]
-        },
-        {
+    },
+    {
         "name": "Why can't we all just get along?",
         "questions": [
             {
-            "question": "What happened on September 1, 1939?",
-            "answer": "Germany invaded Poland, kicking off World War II",
-            "value": 100
+                "question": "What happened on September 1, 1939?",
+                "answer": "Germany invaded Poland, kicking off World War II",
+                "value": 200
             },
             {
-            "question": "What was the name of the war in which Arab nations attacked Israel but ended up losing very quickly?",
-            "answer": "The Six-Day War",
-            "value": 200
+                "question": "What was the name of the war in which Arab nations attacked Israel but ended up losing very quickly?",
+                "answer": "The Six-Day War",
+                "value": 400
             },
             {
-            "question": "After what war did Pheidippides run more than 40 kilometers to Athens to announce the Greek victory?",
-            "answer": "The Battle of Marathon",
-            "value": 300
+                "question": "After what war did Pheidippides run more than 40 kilometers to Athens to announce the Greek victory?",
+                "answer": "The Battle of Marathon",
+                "value": 600
             },
             {
-            "question": "Where was Archduke Franz Ferdinand when he was killed?",
-            "answer": "Bosnia",
-            "value": 400
+                "question": "Where was Archduke Franz Ferdinand when he was killed?",
+                "answer": "Bosnia",
+                "value": 800
             },
             {
-            "question": "What ancient civilization was defeated at the Battle of Qadesh?",
-            "answer": "The Hittites",
-            "value": 500
+                "question": "What ancient civilization was defeated at the Battle of Qadesh?",
+                "answer": "The Hittites",
+                "value": 1000
             }
         ]
-        },
-        {
+    },
+    {
         "name": "What a kingdom",
         "questions": [
             {
-            "question": "What is the only mammal that lays eggs?",
-            "answer": "The platypus",
-            "value": 100
+                "question": "What is the only mammal that lays eggs?",
+                "answer": "The platypus",
+                "value": 200
             },
             {
-            "question": "How long is a whale shark, plus or minus one meter?",
-            "answer": "19 meters",
-            "value": 200
+                "question": "How long is a whale shark, plus or minus one meter?",
+                "answer": "19 meters",
+                "value": 400
             },
             {
-            "question": "What land animal has the highest resting blood pressure?",
-            "answer": "The giraffe",
-            "value": 300
+                "question": "What land animal has the highest resting blood pressure?",
+                "answer": "The giraffe",
+                "value": 600
             },
             {
-            "question": "What is unique about the octopus's brain?",
-            "answer": "It is ring-shaped",
-            "value": 400
+                "question": "What is unique about the octopus's brain?",
+                "answer": "It is ring-shaped",
+                "value": 800
             },
             {
-            "question": "How long can sloths hold their breath?",
-            "answer": "About 40 minutes",
-            "value": 500
+                "question": "How long can sloths hold their breath?",
+                "answer": "About 40 minutes",
+                "value": 1000
             }
         ]
-        },
-        {
+    },
+    {
         "name": "Name That Tune",
         "questions": [
             {
-            "question": "Name the song containing this lyric: 'Some will win. Some will lose. Some were born to sing the blues.'",
-            "answer": "Don't Stop Believin' - Journey",
-            "value": 100
+                "question": "Name the song containing this lyric: 'Some will win. Some will lose. Some were born to sing the blues.'",
+                "answer": "Don't Stop Believin' - Journey",
+                "value": 200
             },
             {
-            "question": "Name the song containing this lyric: 'Some folks were born silver spoon in hand.'",
-            "answer": "Fortunate Son - Creedence Clearwater Revival",
-            "value": 200
+                "question": "Name the song containing this lyric: 'Some folks were born silver spoon in hand.'",
+                "answer": "Fortunate Son - Creedence Clearwater Revival",
+                "value": 400
             },
             {
-            "question": "Name the song containing this lyric: 'You're the reason that I just can't concentrate.'",
-            "answer": "All Time Low - Jon Bellion",
-            "value": 300
+                "question": "Name the song containing this lyric: 'You're the reason that I just can't concentrate.'",
+                "answer": "All Time Low - Jon Bellion",
+                "value": 600
             },
             {
-            "question": "Name the song containing this lyric: 'Millions of people living as foes.'",
-            "answer": "Crazy Train - Ozzy Osbourne",
-            "value": 400
+                "question": "Name the song containing this lyric: 'Millions of people living as foes.'",
+                "answer": "Crazy Train - Ozzy Osbourne",
+                "value": 800
             },
             {
-            "question": "Name the song containing this lyric: 'Show us how.'",
-            "answer": "Bezos I - Bo Burnham",
-            "value": 500
+                "question": "Name the song containing this lyric: 'Show us how.'",
+                "answer": "Bezos I - Bo Burnham",
+                "value": 1000
             }
         ]
-        },
-        {
+    },
+    {
         "name": "Not Blue's Clues",
         "questions": [
             {
-            "question": "What is the name of Bluey's little sister?",
-            "answer": "Bingo",
-            "value": 100
+                "question": "What is the name of Bluey's little sister?",
+                "answer": "Bingo",
+                "value": 200
             },
             {
-            "question": "What kind of dog is Bluey?",
-            "answer": "Australian Cattle Dog (Blue Heeler)",
-            "value": 200
+                "question": "What kind of dog is Bluey?",
+                "answer": "Australian Cattle Dog (Blue Heeler)",
+                "value": 400
             },
             {
-            "question": "Where do Bluey and her family live?",
-            "answer": "Brisbane, Australia",
-            "value": 300
+                "question": "Where do Bluey and her family live?",
+                "answer": "Brisbane, Australia",
+                "value": 600
             },
             {
-            "question": "What is Bandit's occupation?",
-            "answer": "Archaeologist",
-            "value": 400
+                "question": "What is Bandit's occupation?",
+                "answer": "Archaeologist",
+                "value": 800
             },
             {
-            "question": "What year did the first episode of Bluey air?",
-            "answer": "2018",
-            "value": 500
+                "question": "What year did the first episode of Bluey air?",
+                "answer": "2018",
+                "value": 1000
             }
         ]
-        }
-    ]
+    }
+]
   }
 }

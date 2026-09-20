@@ -109,9 +109,10 @@ isTeamMode.value = false
 showRound2.value = false
 
 const pointButtonValues = [
+    +500,
     +100,
-    +99,
-    -50,
+    -100,
+    -500,
 ]
 
 const teams = ref([])

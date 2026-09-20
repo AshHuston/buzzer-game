@@ -13,9 +13,10 @@ const isTeamMode = ref(false)
 const teamNameInput = ref('')
 
 const pointButtonValues = [
+    +500,
     +100,
-    +99,
-    -50,
+    -100,
+    -500,
 ]
 
 const teams = ref([])
