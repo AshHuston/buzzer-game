@@ -16,7 +16,7 @@
             <wa-checkbox @change="showRound2 = $event.target.checked">Round 2</wa-checkbox>
             <wa-checkbox @change="setScoreboardMode($event.target.checked)">Team mode</wa-checkbox>
         </div>
-        <div v-if="displayScoreButtons" class="scoreButtonList">
+        <div class="scoreButtonList">
             <p class="caption">Scores:</p>
             <div v-if="isTeamMode">
                 <div class="wa-cluster">
@@ -34,7 +34,7 @@
                     class="wa-split name"
                 >
                     <span>{{ team.name }}: {{ team.score }}</span>
-                    <div>
+                    <div v-if="displayScoreButtons">
                         <wa-button
                             v-for="points, index in pointButtonValues"
                             :key="index"
