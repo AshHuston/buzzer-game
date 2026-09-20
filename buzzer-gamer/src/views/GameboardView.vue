@@ -16,7 +16,7 @@
             <wa-checkbox @change="showRound2 = $event.target.checked">Round 2</wa-checkbox>
             <wa-checkbox @change="setScoreboardMode($event.target.checked)">Team mode</wa-checkbox>
         </div>
-        <div class="scoreButtonList">
+        <div v-if="displayScoreButtons" class="scoreButtonList">
             <p class="caption">Scores:</p>
             <div v-if="isTeamMode">
                 <div class="wa-cluster">
@@ -93,6 +93,8 @@ import { io } from 'socket.io-client'
 import { onMounted, ref, computed, onBeforeUnmount } from 'vue';
 import { useRoute } from 'vue-router'
 import game from '@/assets/lakeGame.json'
+
+const displayScoreButtons = false;
 
 const route = useRoute()
 
